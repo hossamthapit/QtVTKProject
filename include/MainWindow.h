@@ -30,15 +30,19 @@ public:
 
 public slots :
     
+    void onChooseColorClick();
+    void onDrawClick();
+
     void onDrawSphereClick();
-    //void onDrawCubeClick();
-    //void onDrawHimisphereClick();
-    //void onDrawConeClick();
-    //void onDrawPyramidClick();
-    //void onDrawCylinderClick();
-    //void onDrawTubeClick();
-    //void onDrawDoughnutClick();
-    //void onDrawCurvedCylinderClick();
+    void onDrawCubeClick();
+    void onDrawConeClick();
+    void onDrawCylinderClick();
+    
+    void onDrawHimisphereClick();
+    void onDrawPyramidClick();
+    void onDrawTubeClick();
+    void onDrawDoughnutClick();
+    void onDrawCurvedCylinderClick();
 
    // void changeColor();
    // void changeOpacity();

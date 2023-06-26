@@ -217,6 +217,9 @@ C:/QTVTKProject/include/MainWindow.h
  mdp:C:/QtNEW/6.5.1/msvc2019_64/include/QtWidgets/qtwidgetsexports.h
  mdp:C:/QtNEW/6.5.1/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:C:/QtNEW/6.5.1/msvc2019_64/include/QtWidgets/qwidget.h
+C:/QTVTKProject/include/Sphere.h
 C:/QTVTKProject/src/main.cpp
 C:/QTVTKProject/src/MainWindow.cpp
+ uic:ui_MainWindow.h
+C:/QTVTKProject/src/Sphere.cpp
  uic:ui_MainWindow.h

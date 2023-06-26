@@ -18,13 +18,13 @@ events:
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler:  
-      Build flags: 
+      Build flags: /DWIN32;/D_WINDOWS
       Id flags:  
       
       The output was:
       0
       MSBuild version 17.6.3+07e294721 for .NET Framework
-      Build started 6/22/2023 11:03:37 AM.
+      Build started 6/26/2023 4:19:16 PM.
       
       Project "C:\\QTVTKProject\\build\\CMakeFiles\\3.27.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -51,7 +51,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:06.32
+      Time Elapsed 00:00:02.78
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -71,13 +71,13 @@ events:
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler:  
-      Build flags: 
+      Build flags: /DWIN32;/D_WINDOWS;/GR;/EHsc
       Id flags:  
       
       The output was:
       0
       MSBuild version 17.6.3+07e294721 for .NET Framework
-      Build started 6/22/2023 11:03:44 AM.
+      Build started 6/26/2023 4:19:21 PM.
       
       Project "C:\\QTVTKProject\\build\\CMakeFiles\\3.27.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -104,7 +104,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.10
+      Time Elapsed 00:00:01.20
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -123,8 +123,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-s0ie5n"
-      binary: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-s0ie5n"
+      source: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-73rpr5"
+      binary: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-73rpr5"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -133,38 +133,38 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-s0ie5n'
+        Change Dir: 'C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-73rpr5'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c1146.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c148b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.6.3+07e294721 for .NET Framework
-        Build started 6/22/2023 11:03:47 AM.
+        Build started 6/26/2023 4:19:23 PM.
         
-        Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s0ie5n\\cmTC_c1146.vcxproj" on node 1 (default targets).
+        Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-73rpr5\\cmTC_c148b.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_c1146.dir\\Debug\\".
-          Creating directory "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s0ie5n\\Debug\\".
-          Creating directory "cmTC_c1146.dir\\Debug\\cmTC_c1146.tlog\\".
+          Creating directory "cmTC_c148b.dir\\Debug\\".
+          Creating directory "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-73rpr5\\Debug\\".
+          Creating directory "cmTC_c148b.dir\\Debug\\cmTC_c148b.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_c1146.dir\\Debug\\cmTC_c1146.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_c148b.dir\\Debug\\cmTC_c148b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c1146.dir\\Debug\\\\" /Fd"cmTC_c1146.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c148b.dir\\Debug\\\\" /Fd"cmTC_c148b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32534 for x64
           CMakeCCompilerABI.c
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c1146.dir\\Debug\\\\" /Fd"cmTC_c1146.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c148b.dir\\Debug\\\\" /Fd"cmTC_c148b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s0ie5n\\Debug\\cmTC_c1146.exe" /INCREMENTAL /ILK:"cmTC_c1146.dir\\Debug\\cmTC_c1146.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-s0ie5n/Debug/cmTC_c1146.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-s0ie5n/Debug/cmTC_c1146.lib" /MACHINE:X64  /machine:x64 cmTC_c1146.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_c1146.vcxproj -> C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s0ie5n\\Debug\\cmTC_c1146.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-73rpr5\\Debug\\cmTC_c148b.exe" /INCREMENTAL /ILK:"cmTC_c148b.dir\\Debug\\cmTC_c148b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-73rpr5/Debug/cmTC_c148b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-73rpr5/Debug/cmTC_c148b.lib" /MACHINE:X64  /machine:x64 cmTC_c148b.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_c148b.vcxproj -> C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-73rpr5\\Debug\\cmTC_c148b.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_c1146.dir\\Debug\\cmTC_c1146.tlog\\unsuccessfulbuild".
-          Touching "cmTC_c1146.dir\\Debug\\cmTC_c1146.tlog\\cmTC_c1146.lastbuildstate".
-        Done Building Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-s0ie5n\\cmTC_c1146.vcxproj" (default targets).
+          Deleting file "cmTC_c148b.dir\\Debug\\cmTC_c148b.tlog\\unsuccessfulbuild".
+          Touching "cmTC_c148b.dir\\Debug\\cmTC_c148b.tlog\\cmTC_c148b.lastbuildstate".
+        Done Building Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-73rpr5\\cmTC_c148b.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.61
+        Time Elapsed 00:00:02.12
         
       exitCode: 0
   -
@@ -176,8 +176,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-fxio1f"
-      binary: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-fxio1f"
+      source: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-wspjvc"
+      binary: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-wspjvc"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -186,288 +186,38 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-fxio1f'
+        Change Dir: 'C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-wspjvc'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ddd01.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a82cd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.6.3+07e294721 for .NET Framework
-        Build started 6/22/2023 11:03:49 AM.
+        Build started 6/26/2023 4:19:26 PM.
         
-        Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fxio1f\\cmTC_ddd01.vcxproj" on node 1 (default targets).
+        Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wspjvc\\cmTC_a82cd.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_ddd01.dir\\Debug\\".
-          Creating directory "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fxio1f\\Debug\\".
-          Creating directory "cmTC_ddd01.dir\\Debug\\cmTC_ddd01.tlog\\".
+          Creating directory "cmTC_a82cd.dir\\Debug\\".
+          Creating directory "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wspjvc\\Debug\\".
+          Creating directory "cmTC_a82cd.dir\\Debug\\cmTC_a82cd.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_ddd01.dir\\Debug\\cmTC_ddd01.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_a82cd.dir\\Debug\\cmTC_a82cd.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ddd01.dir\\Debug\\\\" /Fd"cmTC_ddd01.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_a82cd.dir\\Debug\\\\" /Fd"cmTC_a82cd.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32534 for x64
           CMakeCXXCompilerABI.cpp
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ddd01.dir\\Debug\\\\" /Fd"cmTC_ddd01.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_a82cd.dir\\Debug\\\\" /Fd"cmTC_a82cd.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fxio1f\\Debug\\cmTC_ddd01.exe" /INCREMENTAL /ILK:"cmTC_ddd01.dir\\Debug\\cmTC_ddd01.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-fxio1f/Debug/cmTC_ddd01.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-fxio1f/Debug/cmTC_ddd01.lib" /MACHINE:X64  /machine:x64 cmTC_ddd01.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_ddd01.vcxproj -> C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fxio1f\\Debug\\cmTC_ddd01.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wspjvc\\Debug\\cmTC_a82cd.exe" /INCREMENTAL /ILK:"cmTC_a82cd.dir\\Debug\\cmTC_a82cd.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-wspjvc/Debug/cmTC_a82cd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-wspjvc/Debug/cmTC_a82cd.lib" /MACHINE:X64  /machine:x64 cmTC_a82cd.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_a82cd.vcxproj -> C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wspjvc\\Debug\\cmTC_a82cd.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_ddd01.dir\\Debug\\cmTC_ddd01.tlog\\unsuccessfulbuild".
-          Touching "cmTC_ddd01.dir\\Debug\\cmTC_ddd01.tlog\\cmTC_ddd01.lastbuildstate".
-        Done Building Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fxio1f\\cmTC_ddd01.vcxproj" (default targets).
+          Deleting file "cmTC_a82cd.dir\\Debug\\cmTC_a82cd.tlog\\unsuccessfulbuild".
+          Touching "cmTC_a82cd.dir\\Debug\\cmTC_a82cd.tlog\\cmTC_a82cd.lastbuildstate".
+        Done Building Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wspjvc\\cmTC_a82cd.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.54
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:112 (include)"
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:17 (find_dependency)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:40 (include)"
-      - "CMakeLists.txt:11 (find_package)"
-    checks:
-      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
-    directories:
-      source: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-u33rnz"
-      binary: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-u33rnz"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6;C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
-    buildResult:
-      variable: "CMAKE_HAVE_LIBC_PTHREAD"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-u33rnz'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_74d57.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        MSBuild version 17.6.3+07e294721 for .NET Framework
-        Build started 6/22/2023 11:03:53 AM.
-        
-        Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u33rnz\\cmTC_74d57.vcxproj" on node 1 (default targets).
-        PrepareForBuild:
-          Creating directory "cmTC_74d57.dir\\Debug\\".
-          Creating directory "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u33rnz\\Debug\\".
-          Creating directory "cmTC_74d57.dir\\Debug\\cmTC_74d57.tlog\\".
-        InitializeBuildStatus:
-          Creating "cmTC_74d57.dir\\Debug\\cmTC_74d57.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_74d57.dir\\Debug\\\\" /Fd"cmTC_74d57.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u33rnz\\src.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32534 for x64
-          src.c
-          Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_74d57.dir\\Debug\\\\" /Fd"cmTC_74d57.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u33rnz\\src.c"
-        C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u33rnz\\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u33rnz\\cmTC_74d57.vcxproj]
-        Done Building Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u33rnz\\cmTC_74d57.vcxproj" (default targets) -- FAILED.
-        
-        Build FAILED.
-        
-        "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u33rnz\\cmTC_74d57.vcxproj" (default target) (1) ->
-        (ClCompile target) -> 
-          C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u33rnz\\src.c(1,10): fatal  error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-u33rnz\\cmTC_74d57.vcxproj]
-        
-            0 Warning(s)
-            1 Error(s)
-        
-        Time Elapsed 00:00:01.02
-        
-      exitCode: 1
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:175 (_threads_check_lib)"
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:112 (include)"
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:17 (find_dependency)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:40 (include)"
-      - "CMakeLists.txt:11 (find_package)"
-    checks:
-      - "Looking for pthread_create in pthreads"
-    directories:
-      source: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-dqng60"
-      binary: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-dqng60"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6;C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
-    buildResult:
-      variable: "CMAKE_HAVE_PTHREADS_CREATE"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-dqng60'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d1199.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        MSBuild version 17.6.3+07e294721 for .NET Framework
-        Build started 6/22/2023 11:03:55 AM.
-        
-        Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dqng60\\cmTC_d1199.vcxproj" on node 1 (default targets).
-        PrepareForBuild:
-          Creating directory "cmTC_d1199.dir\\Debug\\".
-          Creating directory "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dqng60\\Debug\\".
-          Creating directory "cmTC_d1199.dir\\Debug\\cmTC_d1199.tlog\\".
-        InitializeBuildStatus:
-          Creating "cmTC_d1199.dir\\Debug\\cmTC_d1199.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d1199.dir\\Debug\\\\" /Fd"cmTC_d1199.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dqng60\\CheckFunctionExists.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32534 for x64
-          CheckFunctionExists.c
-          Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d1199.dir\\Debug\\\\" /Fd"cmTC_d1199.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dqng60\\CheckFunctionExists.c"
-        Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dqng60\\Debug\\cmTC_d1199.exe" /INCREMENTAL /ILK:"cmTC_d1199.dir\\Debug\\cmTC_d1199.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-dqng60/Debug/cmTC_d1199.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-dqng60/Debug/cmTC_d1199.lib" /MACHINE:X64  /machine:x64 cmTC_d1199.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dqng60\\cmTC_d1199.vcxproj]
-        Done Building Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dqng60\\cmTC_d1199.vcxproj" (default targets) -- FAILED.
-        
-        Build FAILED.
-        
-        "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dqng60\\cmTC_d1199.vcxproj" (default target) (1) ->
-        (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-dqng60\\cmTC_d1199.vcxproj]
-        
-            0 Warning(s)
-            1 Error(s)
-        
-        Time Elapsed 00:00:00.79
-        
-      exitCode: 1
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckLibraryExists.cmake:69 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/FindThreads.cmake:176 (_threads_check_lib)"
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/Qt6Dependencies.cmake:24 (_qt_internal_find_third_party_dependencies)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/Qt6Config.cmake:112 (include)"
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:17 (find_dependency)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:40 (include)"
-      - "CMakeLists.txt:11 (find_package)"
-    checks:
-      - "Looking for pthread_create in pthread"
-    directories:
-      source: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-y3qzhi"
-      binary: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-y3qzhi"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
-      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6;C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
-    buildResult:
-      variable: "CMAKE_HAVE_PTHREAD_CREATE"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-y3qzhi'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9d198.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        MSBuild version 17.6.3+07e294721 for .NET Framework
-        Build started 6/22/2023 11:03:56 AM.
-        
-        Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y3qzhi\\cmTC_9d198.vcxproj" on node 1 (default targets).
-        PrepareForBuild:
-          Creating directory "cmTC_9d198.dir\\Debug\\".
-          Creating directory "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y3qzhi\\Debug\\".
-          Creating directory "cmTC_9d198.dir\\Debug\\cmTC_9d198.tlog\\".
-        InitializeBuildStatus:
-          Creating "cmTC_9d198.dir\\Debug\\cmTC_9d198.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9d198.dir\\Debug\\\\" /Fd"cmTC_9d198.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y3qzhi\\CheckFunctionExists.c"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32534 for x64
-          CheckFunctionExists.c
-          Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9d198.dir\\Debug\\\\" /Fd"cmTC_9d198.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y3qzhi\\CheckFunctionExists.c"
-        Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y3qzhi\\Debug\\cmTC_9d198.exe" /INCREMENTAL /ILK:"cmTC_9d198.dir\\Debug\\cmTC_9d198.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-y3qzhi/Debug/cmTC_9d198.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-y3qzhi/Debug/cmTC_9d198.lib" /MACHINE:X64  /machine:x64 cmTC_9d198.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y3qzhi\\cmTC_9d198.vcxproj]
-        Done Building Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y3qzhi\\cmTC_9d198.vcxproj" (default targets) -- FAILED.
-        
-        Build FAILED.
-        
-        "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y3qzhi\\cmTC_9d198.vcxproj" (default target) (1) ->
-        (Link target) -> 
-          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-y3qzhi\\cmTC_9d198.vcxproj]
-        
-            0 Warning(s)
-            1 Error(s)
-        
-        Time Elapsed 00:00:00.76
-        
-      exitCode: 1
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/FindWrapAtomic.cmake:36 (check_cxx_source_compiles)"
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:30 (_qt_internal_find_third_party_dependencies)"
-      - "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:40 (include)"
-      - "CMakeLists.txt:11 (find_package)"
-    checks:
-      - "Performing Test HAVE_STDATOMIC"
-    directories:
-      source: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-wcz5g2"
-      binary: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-wcz5g2"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
-      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6;C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;C:/QtNEW/6.5.1/msvc2019_64/lib/cmake/Qt6/3rdparty/kwin"
-    buildResult:
-      variable: "HAVE_STDATOMIC"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-wcz5g2'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e41ed.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        MSBuild version 17.6.3+07e294721 for .NET Framework
-        Build started 6/22/2023 11:03:57 AM.
-        
-        Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wcz5g2\\cmTC_e41ed.vcxproj" on node 1 (default targets).
-        PrepareForBuild:
-          Creating directory "cmTC_e41ed.dir\\Debug\\".
-          Creating directory "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wcz5g2\\Debug\\".
-          Creating directory "cmTC_e41ed.dir\\Debug\\cmTC_e41ed.tlog\\".
-        InitializeBuildStatus:
-          Creating "cmTC_e41ed.dir\\Debug\\cmTC_e41ed.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e41ed.dir\\Debug\\\\" /Fd"cmTC_e41ed.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wcz5g2\\src.cxx"
-          Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32534 for x64
-          src.cxx
-          Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAVE_STDATOMIC /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e41ed.dir\\Debug\\\\" /Fd"cmTC_e41ed.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wcz5g2\\src.cxx"
-        Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wcz5g2\\Debug\\cmTC_e41ed.exe" /INCREMENTAL /ILK:"cmTC_e41ed.dir\\Debug\\cmTC_e41ed.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-wcz5g2/Debug/cmTC_e41ed.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-wcz5g2/Debug/cmTC_e41ed.lib" /MACHINE:X64  /machine:x64 cmTC_e41ed.dir\\Debug\\src.obj
-          cmTC_e41ed.vcxproj -> C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wcz5g2\\Debug\\cmTC_e41ed.exe
-        FinalizeBuildStatus:
-          Deleting file "cmTC_e41ed.dir\\Debug\\cmTC_e41ed.tlog\\unsuccessfulbuild".
-          Touching "cmTC_e41ed.dir\\Debug\\cmTC_e41ed.tlog\\cmTC_e41ed.lastbuildstate".
-        Done Building Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wcz5g2\\cmTC_e41ed.vcxproj" (default targets).
-        
-        Build succeeded.
-            0 Warning(s)
-            0 Error(s)
-        
-        Time Elapsed 00:00:01.43
+        Time Elapsed 00:00:01.06
         
       exitCode: 0
 ...

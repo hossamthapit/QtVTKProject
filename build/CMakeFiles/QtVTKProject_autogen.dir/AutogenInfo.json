@@ -1315,6 +1315,12 @@
 			"MU",
 			"6YEA5652QU/moc_MainWindow.cpp",
 			null
+		],
+		[
+			"C:/QTVTKProject/include/Sphere.h",
+			"MU",
+			"6YEA5652QU/moc_Sphere.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -1609,6 +1615,7 @@
 	"SOURCES" : 
 	[
 		[ "C:/QTVTKProject/src/MainWindow.cpp", "MU", null ],
+		[ "C:/QTVTKProject/src/Sphere.cpp", "MU", null ],
 		[ "C:/QTVTKProject/src/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

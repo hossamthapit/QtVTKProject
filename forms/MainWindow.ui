@@ -6,38 +6,305 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1081</width>
+    <height>748</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <widget class="QComboBox" name="comboBox3DObjects">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>80</y>
+      <width>231</width>
+      <height>28</height>
+     </rect>
+    </property>
     <item>
-     <widget class="QPushButton" name="pushButton">
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
+     <property name="text">
+      <string>Sphere</string>
+     </property>
     </item>
     <item>
-     <widget class="QVTKOpenGLNativeWidget" name="openGLWidget"/>
+     <property name="text">
+      <string>Cube</string>
+     </property>
     </item>
-   </layout>
+    <item>
+     <property name="text">
+      <string>Himisphere</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cone</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pyramid</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cylinder</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Tube</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Doughnut</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>CurvedCylinder</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="btnDraw">
+    <property name="geometry">
+     <rect>
+      <x>892</x>
+      <y>170</y>
+      <width>121</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Draw</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnChooseColor">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>130</y>
+      <width>121</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Choose Color</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>50</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Choose 3D Object</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_Scale">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>300</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>280</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Scale</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_Flip">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>360</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>340</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Flip</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_Rotate">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>420</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>400</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rotate</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_xTranslate">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>490</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>460</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Translate</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>490</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>490</y>
+      <width>21</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Y</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_yTranslate">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>490</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>540</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Opacity</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser_Opacity">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>560</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnReDraw">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>620</y>
+      <width>121</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Apply Changes</string>
+    </property>
+   </widget>
+   <widget class="QVTKOpenGLNativeWidget" name="openGLWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>791</width>
+      <height>661</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1081</width>
      <height>25</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menu3D_Painter_Test">
+    <property name="title">
+     <string>3D Painter Test</string>
+    </property>
+   </widget>
+   <addaction name="menu3D_Painter_Test"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="action3D_Painter">
+   <property name="text">
+    <string>3D Painter</string>
+   </property>
+  </action>
  </widget>
  <customwidgets>
   <customwidget>

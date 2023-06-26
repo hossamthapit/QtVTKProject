@@ -7,6 +7,9 @@
     <ClCompile Include="C:\QTVTKProject\src\MainWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\QTVTKProject\src\Sphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\QTVTKProject\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -19,12 +22,15 @@
     <ClCompile Include="C:\QTVTKProject\build\QtVTKProject_autogen\mocs_compilation_RelWithDebInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Sphere.cpp">
+    <ClCompile Include="Shape.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\QTVTKProject\include\MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\QTVTKProject\include\Sphere.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\QTVTKProject\build\QtVTKProject_autogen\include_Debug\forms\ui_MainWindow.h">
@@ -39,7 +45,7 @@
     <ClInclude Include="C:\QTVTKProject\build\QtVTKProject_autogen\include_RelWithDebInfo\forms\ui_MainWindow.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Sphere.h">
+    <ClInclude Include="Shape.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
