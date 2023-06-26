@@ -1,0 +1,3 @@
+C:/QTVTKProject/build/CMakeFiles/QtVTKProject.dir
+C:/QTVTKProject/build/CMakeFiles/ALL_BUILD.dir
+C:/QTVTKProject/build/CMakeFiles/ZERO_CHECK.dir

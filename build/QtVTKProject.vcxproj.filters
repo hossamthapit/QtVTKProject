@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\QTVTKProject\build\QtVTKProject_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\QTVTKProject\src\MainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\QTVTKProject\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\QTVTKProject\build\QtVTKProject_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\QTVTKProject\build\QtVTKProject_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\QTVTKProject\build\QtVTKProject_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\QTVTKProject\include\MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\QTVTKProject\build\QtVTKProject_autogen\include_Debug\forms\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\QTVTKProject\build\QtVTKProject_autogen\include_Release\forms\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\QTVTKProject\build\QtVTKProject_autogen\include_MinSizeRel\forms\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\QTVTKProject\build\QtVTKProject_autogen\include_RelWithDebInfo\forms\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\QTVTKProject\build\CMakeFiles\8bf5e75ceea891d8919a47cabe2e7f1a\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\QTVTKProject\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\QTVTKProject\forms\MainWindow.ui" />
+    <None Include="C:\QTVTKProject\build\QtVTKProject_autogen\autouic_Debug.stamp" />
+    <None Include="C:\QTVTKProject\build\QtVTKProject_autogen\autouic_Release.stamp" />
+    <None Include="C:\QTVTKProject\build\QtVTKProject_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="C:\QTVTKProject\build\QtVTKProject_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{FFD0E5B0-521E-3425-9385-5956B710753D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2775FE77-353F-395E-9766-22DE1CB50E58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{EBEC8950-9C55-3E82-9E71-5FDB313729F6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

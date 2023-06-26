@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\QTVTKProject\build\CMakeFiles\1861d6c76fdc7b0a0ec31bcfaf5a5899\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{FFD0E5B0-521E-3425-9385-5956B710753D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
