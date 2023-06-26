@@ -11,18 +11,6 @@
 Shape::Shape() {
     setColor();
 }
-void Shape::Rotate() {
-
-}
-void Shape::Flip() {
-
-}
-void Shape::Translate() {
-
-}
-void Shape::Scale() {
-
-}
 
 void Shape::setColor() {
     color = pickColor();

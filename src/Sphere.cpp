@@ -62,6 +62,7 @@ Cone::Cone()
 
 Cylinder::Cylinder()
 {
+
     vtkSmartPointer<vtkCylinderSource> cylinder = vtkSmartPointer<vtkCylinderSource>::New();
     cylinder->SetRadius(8);
     cylinder->SetHeight(7);
@@ -72,6 +73,7 @@ Cylinder::Cylinder()
     vtkSmartPointer<vtkActor> cylinderActor = vtkSmartPointer<vtkActor>::New();
     cylinderActor->SetMapper(cylinderMapper);
     cylinderActor->GetProperty()->SetColor(color.red() / 100., color.green() / 100., color.blue() / 100);
+    
     actor = cylinderActor;
 
 }

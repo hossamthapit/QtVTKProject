@@ -5,89 +5,80 @@
 #include <Shape.h>
 
 
-class Sphere : Shape
+class Sphere :public Shape
 {
 private:
 	double radius;
 
 public:
-	vtkSmartPointer<vtkActor> actor;
 	Sphere();
 
 };
 
-class Cube : Shape
+class Cube : public Shape
 {
 private:
 	double length;
 
 public:
-	vtkSmartPointer<vtkActor> actor;
 	Cube();
 };
 
-class Himisphere : Shape
+class Himisphere : public Shape
 {
 private:
 	double length;
 
 public:
-	vtkSmartPointer<vtkActor> actor;
 	Himisphere();
 };
 
-class Cone : Shape
+class Cone : public Shape
 {
 private:
 	double radius;
 	double height;
 public:
-	vtkSmartPointer<vtkActor> actor;
 	Cone();
 };
-class Pyramid : Shape
+class Pyramid : public Shape
 {
 private:
 	double length;
 
 public:
-	vtkSmartPointer<vtkActor> actor;
 	Pyramid();
 };
-class Cylinder : Shape
+class Cylinder : public Shape
 {
 private:
 	double radius;
 	double height;
 
 public:
-	vtkSmartPointer<vtkActor> actor;
 	Cylinder();
 };
-class Tube : Shape
+class Tube : public Shape
 {
 private:
 	double length;
 
 public:
-	vtkSmartPointer<vtkActor> actor;
 	Tube();
 };
-class Doughnut : Shape
+class Doughnut : public Shape
 {
 private:
 	double length;
 
 public:
-	vtkSmartPointer<vtkActor> actor;
 	Doughnut();
 };
-class CurvedCylinder : Shape
+class CurvedCylinder : public Shape
 {
 private:
 	double length;
 
 public:
-	vtkSmartPointer<vtkActor> actor;
 	CurvedCylinder();
 };

@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <Shape.h>
 #include <QMainWindow>
 #include <vtkGenericOpenGLRenderWindow.h>
 #include <vtkRenderer.h>
@@ -44,8 +45,9 @@ public slots :
     void onDrawDoughnutClick();
     void onDrawCurvedCylinderClick();
 
-   // void changeColor();
-   // void changeOpacity();
+     void renderShape(Shape shape);
+    // void changeColor();
+    // void changeOpacity();
 
 };
 

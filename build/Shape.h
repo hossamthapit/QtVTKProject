@@ -12,10 +12,6 @@ public:
 public:
 	vtkSmartPointer<vtkActor> actor;
 	Shape();
-	void Rotate();
-	void Flip();
-	void Translate();
-	void Scale();
 	void setColor();
 	QColor pickColor();
 

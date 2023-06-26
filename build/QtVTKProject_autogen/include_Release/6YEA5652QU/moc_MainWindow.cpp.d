@@ -73,6 +73,7 @@ C:/QTVTKProject/build/QtVTKProject_autogen/include_Release/6YEA5652QU/moc_MainWi
   C:/Program\ Files/VTK/include/vtk-9.2/vtksys/Configure.hxx \
   C:/Program\ Files/VTK/include/vtk-9.2/vtksys/Status.hxx \
   C:/Program\ Files/VTK/include/vtk-9.2/vtksys/SystemTools.hxx \
+  C:/QTVTKProject/build/Shape.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/QObject \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/q20memory.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/q20type_traits.h \

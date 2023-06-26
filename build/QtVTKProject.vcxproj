@@ -498,7 +498,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="ShapeOperations.cpp" />
     <ClInclude Include="Shape.h" />
+    <ClInclude Include="ShapeOperations.h" />
     <None Include="C:\QTVTKProject\forms\MainWindow.ui">
     </None>
     <ClInclude Include="C:\QTVTKProject\include\MainWindow.h" />

@@ -5,6 +5,7 @@
 #include <Qcolordialog.h>
 #include <Sphere.h>
 #include <Shape.h>
+#include <ShapeOperations.h>
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -66,30 +67,33 @@ void MainWindow::onDrawClick() {
 
 void MainWindow::onDrawSphereClick() {
 
-    Sphere shape = Sphere();
-    mRenderer->AddViewProp(shape.actor);
-    mRenderer->ResetCamera();
-    mRenderWindow->Render();
+    Shape shape = Sphere();
+    ShapeOperations::Rotate(shape, 22, 22, 0);
+    renderShape(shape);
 }
 
 void MainWindow::onDrawCubeClick() {
 
-    Cube cube = Cube();
-    mRenderer->AddViewProp(cube.actor);
-    mRenderer->ResetCamera();
-    mRenderWindow->Render();
+    Shape shape = Cube();
+    ShapeOperations::Rotate(shape, 22, 22, 0);
+    mRenderer->AddViewProp(shape.actor);
+    renderShape(shape);
 }
 void MainWindow::onDrawConeClick() {
 
-    Cone cone = Cone();
-    mRenderer->AddViewProp(cone.actor);
-    mRenderer->ResetCamera();
-    mRenderWindow->Render();
+    Shape shape = Cone();
+    ShapeOperations::Rotate(shape, 22, 22, 0);
+    renderShape(shape);
 }
 void MainWindow::onDrawCylinderClick() {
 
-    Cylinder cylinder = Cylinder();
-    mRenderer->AddViewProp(cylinder.actor);
+    Shape shape = Cylinder();
+    ShapeOperations::Rotate(shape, 22, 0, 0);
+    renderShape(shape);
+}
+
+void MainWindow::renderShape(Shape shape) {
+    mRenderer->AddViewProp(shape.actor);
     mRenderer->ResetCamera();
     mRenderWindow->Render();
 }
