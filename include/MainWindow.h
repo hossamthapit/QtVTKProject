@@ -29,7 +29,7 @@ private:
 
 
 public:
-    vtkSmartPointer <vtkActor> activeActor;
+    Shape activeShape;
 
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
@@ -53,9 +53,9 @@ public slots :
     void renderShape(Shape shape);
     void setMouseMovement();
     void setUiConnection();
-    //void changeColor();
+    void setActorColor(vtkSmartPointer <vtkActor> actor, QColor color);
+    void onUndoColorClick();
     // void changeOpacity();
-
 };
 
 #endif // MAINWINDOW_H

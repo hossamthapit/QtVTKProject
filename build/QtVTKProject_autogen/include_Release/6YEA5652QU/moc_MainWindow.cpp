@@ -55,11 +55,16 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "Shape",
     "shape",
     "setMouseMovement",
-    "setUiConnection"
+    "setUiConnection",
+    "setActorColor",
+    "vtkSmartPointer<vtkActor>",
+    "actor",
+    "color",
+    "onUndoColorClick"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[36];
+    uint offsetsAndSizes[46];
     char stringdata0[11];
     char stringdata1[19];
     char stringdata2[1];
@@ -78,6 +83,11 @@ struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
     char stringdata15[6];
     char stringdata16[17];
     char stringdata17[16];
+    char stringdata18[14];
+    char stringdata19[26];
+    char stringdata20[6];
+    char stringdata21[6];
+    char stringdata22[17];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -100,7 +110,12 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(228, 5),  // "Shape"
         QT_MOC_LITERAL(234, 5),  // "shape"
         QT_MOC_LITERAL(240, 16),  // "setMouseMovement"
-        QT_MOC_LITERAL(257, 15)   // "setUiConnection"
+        QT_MOC_LITERAL(257, 15),  // "setUiConnection"
+        QT_MOC_LITERAL(273, 13),  // "setActorColor"
+        QT_MOC_LITERAL(287, 25),  // "vtkSmartPointer<vtkActor>"
+        QT_MOC_LITERAL(313, 5),  // "actor"
+        QT_MOC_LITERAL(319, 5),  // "color"
+        QT_MOC_LITERAL(325, 16)   // "onUndoColorClick"
     },
     "MainWindow",
     "onChooseColorClick",
@@ -119,7 +134,12 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
     "Shape",
     "shape",
     "setMouseMovement",
-    "setUiConnection"
+    "setUiConnection",
+    "setActorColor",
+    "vtkSmartPointer<vtkActor>",
+    "actor",
+    "color",
+    "onUndoColorClick"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -131,7 +151,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-      14,   14, // methods
+      16,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -139,20 +159,22 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   98,    2, 0x0a,    1 /* Public */,
-       3,    0,   99,    2, 0x0a,    2 /* Public */,
-       4,    0,  100,    2, 0x0a,    3 /* Public */,
-       5,    0,  101,    2, 0x0a,    4 /* Public */,
-       6,    0,  102,    2, 0x0a,    5 /* Public */,
-       7,    0,  103,    2, 0x0a,    6 /* Public */,
-       8,    0,  104,    2, 0x0a,    7 /* Public */,
-       9,    0,  105,    2, 0x0a,    8 /* Public */,
-      10,    0,  106,    2, 0x0a,    9 /* Public */,
-      11,    0,  107,    2, 0x0a,   10 /* Public */,
-      12,    0,  108,    2, 0x0a,   11 /* Public */,
-      13,    1,  109,    2, 0x0a,   12 /* Public */,
-      16,    0,  112,    2, 0x0a,   14 /* Public */,
-      17,    0,  113,    2, 0x0a,   15 /* Public */,
+       1,    0,  110,    2, 0x0a,    1 /* Public */,
+       3,    0,  111,    2, 0x0a,    2 /* Public */,
+       4,    0,  112,    2, 0x0a,    3 /* Public */,
+       5,    0,  113,    2, 0x0a,    4 /* Public */,
+       6,    0,  114,    2, 0x0a,    5 /* Public */,
+       7,    0,  115,    2, 0x0a,    6 /* Public */,
+       8,    0,  116,    2, 0x0a,    7 /* Public */,
+       9,    0,  117,    2, 0x0a,    8 /* Public */,
+      10,    0,  118,    2, 0x0a,    9 /* Public */,
+      11,    0,  119,    2, 0x0a,   10 /* Public */,
+      12,    0,  120,    2, 0x0a,   11 /* Public */,
+      13,    1,  121,    2, 0x0a,   12 /* Public */,
+      16,    0,  124,    2, 0x0a,   14 /* Public */,
+      17,    0,  125,    2, 0x0a,   15 /* Public */,
+      18,    2,  126,    2, 0x0a,   16 /* Public */,
+      22,    0,  131,    2, 0x0a,   19 /* Public */,
 
  // slots: parameters
     QMetaType::Void,
@@ -168,6 +190,8 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 14,   15,
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 19, QMetaType::QColor,   20,   21,
     QMetaType::Void,
 
        0        // eod
@@ -210,6 +234,12 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'setMouseMovement'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'setUiConnection'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'setActorColor'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<vtkSmartPointer<vtkActor>, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QColor, std::false_type>,
+        // method 'onUndoColorClick'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -235,6 +265,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 11: _t->renderShape((*reinterpret_cast< std::add_pointer_t<Shape>>(_a[1]))); break;
         case 12: _t->setMouseMovement(); break;
         case 13: _t->setUiConnection(); break;
+        case 14: _t->setActorColor((*reinterpret_cast< std::add_pointer_t<vtkSmartPointer<vtkActor>>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QColor>>(_a[2]))); break;
+        case 15: _t->onUndoColorClick(); break;
         default: ;
         }
     }
@@ -259,13 +291,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 14)
+        if (_id < 16)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 14;
+        _id -= 16;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 14)
+        if (_id < 16)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 14;
+        _id -= 16;
     }
     return _id;
 }

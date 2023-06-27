@@ -12,8 +12,6 @@ public:
 	vtkSmartPointer<vtkActor> actor;
 
 	Shape();
-	void setColor();
-	QColor pickColor();
 
 };
 

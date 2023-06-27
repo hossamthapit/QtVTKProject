@@ -96,7 +96,7 @@ Pyramid::Pyramid()
     float p1[3] = { -1.0, 1.0, 1.0 };
     float p2[3] = { -1.0, -1.0, 1.0 };
     float p3[3] = { 1.0, -1.0, 1.0 };
-    float p4[3] = { 0.0, 0.0, 0.0 };
+    float p4[3] = { 0.0, 0.0, 2 };
 
     points->InsertNextPoint(p0);
     points->InsertNextPoint(p1);
@@ -123,7 +123,6 @@ Pyramid::Pyramid()
 
     vtkNew<vtkActor> actor;
     actor->SetMapper(mapper);
-    actor->GetProperty()->SetColor(color.top().red() / 100., color.top().green() / 100., color.top().blue() / 100);
 
     this->actor = actor;
 }
@@ -135,7 +134,5 @@ Tube::Tube()
 vtkSmartPointer<vtkActor> setShapeActor(QColor color, vtkSmartPointer<vtkPolyDataMapper> shapeMapper) {
     vtkSmartPointer<vtkActor> shapeActor = vtkSmartPointer<vtkActor>::New();
     shapeActor->SetMapper(shapeMapper);
-    shapeActor->GetProperty()->
-        SetColor(color.red() / 100., color.green() / 100., color.blue() / 100);
     return shapeActor;
 }

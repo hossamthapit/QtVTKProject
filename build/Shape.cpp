@@ -9,14 +9,5 @@
 #include "vtkProperty.h"
 
 Shape::Shape() {
-    setColor();
 }
 
-void Shape::setColor() {
-    color.push(pickColor()) ;
-}
-
-QColor Shape::pickColor() {
-    QColor color = QColorDialog::getColor();
-    return color;
-}

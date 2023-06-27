@@ -40,6 +40,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // set up background color
     mRenderer->SetBackground(0, 0, 0);
+
+    ui->btnChooseColor->setText("Change Color");
     
     setUiConnection();
     setMouseMovement();
@@ -56,6 +58,9 @@ void MainWindow::setUiConnection() {
 
     QObject::connect(ui->btnChooseColor, &QPushButton::clicked, this,
         &MainWindow::onChooseColorClick);
+
+    QObject::connect(ui->btnReDraw, &QPushButton::clicked, this,
+        &MainWindow::onUndoColorClick);
 }
 
 void MainWindow::setMouseMovement() {
@@ -73,10 +78,10 @@ void MainWindow::setMouseMovement() {
 
 
 void MainWindow::onChooseColorClick() {
+    if (activeShape.actor == NULL)return;
     QColor color = QColorDialog::getColor();
-    activeActor->GetProperty()->SetColor(color.red() / 100., color.green() / 100., color.blue() / 100);
-    mRenderer->ResetCamera();
-    mRenderWindow->Render();
+    activeShape.color.push(color);
+    setActorColor(activeShape.actor, color);
 }
 
 void MainWindow::onDrawClick() {
@@ -134,11 +139,26 @@ void MainWindow::onDrawPyramidClick() {
 }
 
 void MainWindow::renderShape(Shape shape) {
-    mRenderer->RemoveActor(activeActor);
+    mRenderer->RemoveActor(activeShape.actor);
     mRenderer->AddViewProp(shape.actor);
     mRenderer->ResetCamera();
     mRenderWindow->Render();
-    activeActor = shape.actor;
+    activeShape = shape;
+}
+
+void MainWindow::setActorColor(vtkSmartPointer <vtkActor> actor , QColor color) {
+    actor->GetProperty()->SetColor(color.red() / 100., color.green() / 100., color.blue() / 100);
+    mRenderer->ResetCamera();
+    mRenderWindow->Render();
+}
+
+void MainWindow::onUndoColorClick() {
+    
+    if (activeShape.color.size() > 1) {
+        activeShape.color.pop();
+        setActorColor(activeShape.actor, activeShape.color.top());
+    }
+
 }
 
 void MainWindow::onDrawTubeClick() {
