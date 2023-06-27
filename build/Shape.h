@@ -8,9 +8,8 @@ class Shape
 public:
 	QColor color;
 	double scale;
-
-public:
 	vtkSmartPointer<vtkActor> actor;
+
 	Shape();
 	void setColor();
 	QColor pickColor();

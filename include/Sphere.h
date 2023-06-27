@@ -3,6 +3,7 @@
 #include "vtkSmartPointer.h"
 #include <vtkActor.h>
 #include <Shape.h>
+#include <ShapeOperations.h>
 
 
 class Sphere :public Shape

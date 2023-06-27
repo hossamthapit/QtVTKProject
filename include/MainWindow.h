@@ -45,7 +45,9 @@ public slots :
     void onDrawDoughnutClick();
     void onDrawCurvedCylinderClick();
 
-     void renderShape(Shape shape);
+    void renderShape(Shape shape);
+    void setMouseMovement();
+    void setUiConnection();
     // void changeColor();
     // void changeOpacity();
 

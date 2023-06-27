@@ -1,7 +1,7 @@
 #include "ShapeOperations.h"
 #include <Shape.h>
 
-void ShapeOperations::Rotate(Shape shape, int x, int y, int z)
+void ShapeOperations::Rotate(Shape shape,int x, int y, int z)
 {
 	shape.actor->RotateX(x);
 	shape.actor->RotateY(y);

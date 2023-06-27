@@ -1,11 +1,23 @@
 #include "MainWindow.h"
 #include "ui_MainWindow.h"
-#include <consoleapi.h>
-#include <vtkActor.h>
-#include <Qcolordialog.h>
+
 #include <Sphere.h>
 #include <Shape.h>
 #include <ShapeOperations.h>
+#include <vtkRenderer.h>
+#include <vtkRenderWindow.h>
+#include <vtkPolyDataMapper.h>
+#include <vtkRenderWindowInteractor.h>
+#include <vtkInteractorStyleTrackballCamera.h>
+#include <vtkCommand.h>
+#include <vtkActor.h>
+#include <vtkGenericOpenGLRenderWindow.h>
+#include <vtkSmartPointer.h>
+#include <vtkWidgetEvent.h>
+#include <vtkWidgetEventTranslator.h>
+#include <qcolordialog.h>
+
+
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -27,20 +39,37 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // set up background color
     mRenderer->SetBackground(0, 0, 1);
-
-    // set the ui connection
-    QObject::connect(ui->btnDraw, &QPushButton::clicked, this,
-        &MainWindow::onDrawClick);
-
-    QObject::connect(ui->btnChooseColor, &QPushButton::clicked, this,
-        &MainWindow::onChooseColorClick);
-
+    
+    setUiConnection();
+    setMouseMovement();
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::setUiConnection() {
+    QObject::connect(ui->btnDraw, &QPushButton::clicked, this,
+        &MainWindow::onDrawClick);
+
+    QObject::connect(ui->btnChooseColor, &QPushButton::clicked, this,
+        &MainWindow::onChooseColorClick);
+}
+
+void MainWindow::setMouseMovement() {
+    vtkNew<vtkInteractorStyleTrackballCamera> style;
+    mRenderWindow->GetInteractor()->SetInteractorStyle(style);
+
+    vtkNew<vtkWidgetEventTranslator> translator;
+    translator->SetTranslation(vtkCommand::LeftButtonPressEvent,
+        vtkWidgetEvent::Select);
+    translator->SetTranslation(vtkCommand::MouseMoveEvent,
+        vtkWidgetEvent::Move);
+    translator->SetTranslation(vtkCommand::LeftButtonReleaseEvent,
+        vtkWidgetEvent::EndSelect);
+}
+
 
 void MainWindow::onChooseColorClick() {
     QColor color = QColorDialog::getColor();
@@ -68,7 +97,7 @@ void MainWindow::onDrawClick() {
 void MainWindow::onDrawSphereClick() {
 
     Shape shape = Sphere();
-    ShapeOperations::Rotate(shape, 22, 22, 0);
+    ShapeOperations::Rotate(shape,2, 2, 2);
     renderShape(shape);
 }
 
@@ -79,14 +108,14 @@ void MainWindow::onDrawCubeClick() {
     mRenderer->AddViewProp(shape.actor);
     renderShape(shape);
 }
-void MainWindow::onDrawConeClick() {
 
+
+void MainWindow::onDrawConeClick() {
     Shape shape = Cone();
     ShapeOperations::Rotate(shape, 22, 22, 0);
     renderShape(shape);
 }
 void MainWindow::onDrawCylinderClick() {
-
     Shape shape = Cylinder();
     ShapeOperations::Rotate(shape, 22, 0, 0);
     renderShape(shape);
