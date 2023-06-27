@@ -16,6 +16,7 @@
 #include <vtkWidgetEvent.h>
 #include <vtkWidgetEventTranslator.h>
 #include <qcolordialog.h>
+#include "vtkProperty.h"
 
 
 
@@ -38,7 +39,7 @@ MainWindow::MainWindow(QWidget *parent) :
     mInteractor->Initialize();
 
     // set up background color
-    mRenderer->SetBackground(0, 0, 1);
+    mRenderer->SetBackground(0, 0, 0);
     
     setUiConnection();
     setMouseMovement();
@@ -73,6 +74,9 @@ void MainWindow::setMouseMovement() {
 
 void MainWindow::onChooseColorClick() {
     QColor color = QColorDialog::getColor();
+    activeActor->GetProperty()->SetColor(color.red() / 100., color.green() / 100., color.blue() / 100);
+    mRenderer->ResetCamera();
+    mRenderWindow->Render();
 }
 
 void MainWindow::onDrawClick() {
@@ -90,45 +94,56 @@ void MainWindow::onDrawClick() {
     else if (ui->comboBox3DObjects->currentText() == "Cylinder") {
         onDrawCylinderClick();
     }
-
+    else if (ui->comboBox3DObjects->currentText() == "Pyramid") {
+        onDrawPyramidClick();
+    }
+    else if (ui->comboBox3DObjects->currentText() == "Tube") {
+        onDrawTubeClick();
+    }
+    else if (ui->comboBox3DObjects->currentText() == "Doughnut") {
+        onDrawDoughnutClick();
+    }
+    else if (ui->comboBox3DObjects->currentText() == "CurvedCylinder") {
+        onDrawCurvedCylinderClick();
+    }
+    else if (ui->comboBox3DObjects->currentText() == "Himisphere") {
+        onDrawHimisphereClick();
+    }
 }
 
 
 void MainWindow::onDrawSphereClick() {
-
     Shape shape = Sphere();
-    ShapeOperations::Rotate(shape,2, 2, 2);
     renderShape(shape);
 }
-
 void MainWindow::onDrawCubeClick() {
-
     Shape shape = Cube();
-    ShapeOperations::Rotate(shape, 22, 22, 0);
-    mRenderer->AddViewProp(shape.actor);
     renderShape(shape);
 }
-
-
 void MainWindow::onDrawConeClick() {
     Shape shape = Cone();
-    ShapeOperations::Rotate(shape, 22, 22, 0);
     renderShape(shape);
 }
 void MainWindow::onDrawCylinderClick() {
     Shape shape = Cylinder();
-    ShapeOperations::Rotate(shape, 22, 0, 0);
+    renderShape(shape);
+}
+void MainWindow::onDrawPyramidClick() {
+    Shape shape = Pyramid();
     renderShape(shape);
 }
 
 void MainWindow::renderShape(Shape shape) {
+    mRenderer->RemoveActor(activeActor);
     mRenderer->AddViewProp(shape.actor);
     mRenderer->ResetCamera();
     mRenderWindow->Render();
+    activeActor = shape.actor;
 }
 
+void MainWindow::onDrawTubeClick() {
+
+}
 void MainWindow::onDrawHimisphereClick() {}
-void MainWindow::onDrawPyramidClick() {}
-void MainWindow::onDrawTubeClick() {}
 void MainWindow::onDrawDoughnutClick() {}
 void MainWindow::onDrawCurvedCylinderClick() {}

@@ -2,11 +2,12 @@
 #include <qcolor.h>
 #include "vtkSmartPointer.h"
 #include <vtkActor.h>
+#include <QStack>
 
 class Shape
 {
 public:
-	QColor color;
+	QStack < QColor > color ;
 	double scale;
 	vtkSmartPointer<vtkActor> actor;
 

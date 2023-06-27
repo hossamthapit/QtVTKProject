@@ -75,6 +75,7 @@ C:/QTVTKProject/build/QtVTKProject_autogen/include_Release/6YEA5652QU/moc_MainWi
   C:/Program\ Files/VTK/include/vtk-9.2/vtksys/SystemTools.hxx \
   C:/QTVTKProject/build/Shape.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/QObject \
+  C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/QStack \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/q20memory.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/q20type_traits.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qalgorithms.h \
@@ -147,6 +148,7 @@ C:/QTVTKProject/build/QtVTKProject_autogen/include_Release/6YEA5652QU/moc_MainWi
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qsharedpointer.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qsharedpointer_impl.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qsize.h \
+  C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qstack.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qstring.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qstringalgorithms.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qstringconverter_base.h \

@@ -5,8 +5,11 @@
 #include <QMainWindow>
 #include <vtkGenericOpenGLRenderWindow.h>
 #include <vtkRenderer.h>
+#include <vtkActor.h>
 #include <QVTKInteractor.h>
 #include <vtkInteractorStyle.h>
+
+
 
 namespace Ui {
 class MainWindow;
@@ -26,6 +29,8 @@ private:
 
 
 public:
+    vtkSmartPointer <vtkActor> activeActor;
+
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
@@ -48,7 +53,7 @@ public slots :
     void renderShape(Shape shape);
     void setMouseMovement();
     void setUiConnection();
-    // void changeColor();
+    //void changeColor();
     // void changeOpacity();
 
 };

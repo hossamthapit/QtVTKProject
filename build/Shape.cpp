@@ -13,7 +13,7 @@ Shape::Shape() {
 }
 
 void Shape::setColor() {
-    color = pickColor();
+    color.push(pickColor()) ;
 }
 
 QColor Shape::pickColor() {
