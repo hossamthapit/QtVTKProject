@@ -27,7 +27,7 @@
 #include <vtkRenderer.h>
 #include <vtkUnstructuredGrid.h>
 
-vtkSmartPointer<vtkActor> setShapeActor(QColor color, vtkSmartPointer<vtkPolyDataMapper> shapeMapper);
+vtkSmartPointer<vtkActor> setShapeActor(vtkSmartPointer<vtkPolyDataMapper> shapeMapper);
 
 Sphere::Sphere() {
 	
@@ -35,16 +35,18 @@ Sphere::Sphere() {
     
     sphere->SetCenter(0.0, 0.0, 0.0);
     sphere->SetRadius(5.0);
-    // Make the surface smooth.
     sphere->SetPhiResolution(100);
     sphere->SetThetaResolution(100);
 
     vtkSmartPointer<vtkPolyDataMapper> sphereMapper = vtkSmartPointer<vtkPolyDataMapper>::New();
     sphereMapper->SetInputConnection(sphere->GetOutputPort());
+
+    vtkShape = sphereMapper;
     
-    actor = setShapeActor(color.top(), sphereMapper);
+    actor = setShapeActor(sphereMapper);
 
 }
+
 
 Cube::Cube() {
     vtkSmartPointer<vtkCubeSource> cube = vtkSmartPointer<vtkCubeSource>::New();
@@ -55,7 +57,7 @@ Cube::Cube() {
     vtkSmartPointer<vtkPolyDataMapper> cubeMapper = vtkSmartPointer<vtkPolyDataMapper>::New();
     cubeMapper->SetInputConnection(cube->GetOutputPort());
 
-    actor = setShapeActor(color.top(), cubeMapper);
+    actor = setShapeActor(cubeMapper);
 
 }
 
@@ -68,7 +70,7 @@ Cone::Cone()
     vtkSmartPointer<vtkPolyDataMapper> coneMapper = vtkSmartPointer<vtkPolyDataMapper>::New();
     coneMapper->SetInputConnection(cone->GetOutputPort());
 
-    actor = setShapeActor(color.top(), coneMapper);
+    actor = setShapeActor(coneMapper);
 }
 
 
@@ -85,7 +87,7 @@ Cylinder::Cylinder()
     vtkSmartPointer<vtkPolyDataMapper> cylinderMapper = vtkSmartPointer<vtkPolyDataMapper>::New();
     cylinderMapper->SetInputConnection(cylinder->GetOutputPort());
 
-    actor = setShapeActor(color.top(), cylinderMapper);
+    actor = setShapeActor(cylinderMapper);
 }
 
 Pyramid::Pyramid()
@@ -126,12 +128,8 @@ Pyramid::Pyramid()
 
     this->actor = actor;
 }
-Tube::Tube()
-{
 
-}
-
-vtkSmartPointer<vtkActor> setShapeActor(QColor color, vtkSmartPointer<vtkPolyDataMapper> shapeMapper) {
+vtkSmartPointer<vtkActor> setShapeActor(vtkSmartPointer<vtkPolyDataMapper> shapeMapper) {
     vtkSmartPointer<vtkActor> shapeActor = vtkSmartPointer<vtkActor>::New();
     shapeActor->SetMapper(shapeMapper);
     return shapeActor;

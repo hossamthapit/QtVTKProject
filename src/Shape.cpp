@@ -30,10 +30,15 @@ Shape Shape::GetShape(QString shape) {
     else if (shape == "Pyramid") {
         obj = Pyramid();
     }
-    else if (shape == "Tube") {
-        obj = Tube();
-    }
-
     return obj;
 }
 
+QDataStream& operator<<(QDataStream& out, const Shape& obj) {
+    out <<  obj.color << obj.redosColor;
+    return out;
+}
+
+QDataStream& operator>>(QDataStream& in, Shape& obj) {
+    in >> obj.color >> obj.redosColor;
+    return in;
+}

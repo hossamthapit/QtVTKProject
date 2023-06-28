@@ -35,20 +35,30 @@ public:
 
 public slots :
     
-    void onChooseColorClick();
+    void setUiConnection();
+    void setMouseMovement();
+    
     void onDrawClick();
-    void onChangeScaleClick();
     void removeShape(Shape shape);
 
-    void renderScreen();
-    void addShapeToRenderer(Shape shape);
-    void addDeleteShapeClick();
-    void setMouseMovement();
-    void setUiConnection();
-    void setActorColor(Shape shape);
+    void onChooseColorClick();
     void onUndoColorClick();
     void onRedoColorClick();
-    // void changeOpacity();
+
+    void addShapeToRenderer(Shape shape);
+    void setActorColor(Shape shape);
+    void renderScreen();
+
+    void onDeleteShapeClick();
+
+    void onChangeOpacityClick();
+    void onChangeScaleClick();
+    void onFlipClick();
+    void onRotateClick();
+    void onTranslateClick();
+
+    void onSaveFile();
+    void onLoadFile();
 };
 
 #endif // MAINWINDOW_H
