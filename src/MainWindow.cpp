@@ -41,8 +41,6 @@ MainWindow::MainWindow(QWidget *parent) :
     // set up background color
     mRenderer->SetBackground(0, 0, 0);
 
-    ui->btnChooseColor->setText("Change Color");
-    
     setUiConnection();
     setMouseMovement();
 }
@@ -59,8 +57,18 @@ void MainWindow::setUiConnection() {
     QObject::connect(ui->btnChooseColor, &QPushButton::clicked, this,
         &MainWindow::onChooseColorClick);
 
-    QObject::connect(ui->btnReDraw, &QPushButton::clicked, this,
+    QObject::connect(ui->btnUndo, &QPushButton::clicked, this,
         &MainWindow::onUndoColorClick);
+
+    QObject::connect(ui->btnScale, &QPushButton::clicked, this,
+        &MainWindow::onChangeScaleClick);
+
+    QObject::connect(ui->btnDelete, &QPushButton::clicked, this,
+        &MainWindow::addDeleteShapeClick);
+
+    QObject::connect(ui->btnRedo, &QPushButton::clicked, this,
+        &MainWindow::onRedoColorClick);
+
 }
 
 void MainWindow::setMouseMovement() {
@@ -70,100 +78,74 @@ void MainWindow::setMouseMovement() {
     vtkNew<vtkWidgetEventTranslator> translator;
     translator->SetTranslation(vtkCommand::LeftButtonPressEvent,
         vtkWidgetEvent::Select);
+
     translator->SetTranslation(vtkCommand::MouseMoveEvent,
         vtkWidgetEvent::Move);
+
     translator->SetTranslation(vtkCommand::LeftButtonReleaseEvent,
         vtkWidgetEvent::EndSelect);
 }
 
 
 void MainWindow::onChooseColorClick() {
-    if (activeShape.actor == NULL)return;
+    if (activeShape.back().actor == NULL)return;
     QColor color = QColorDialog::getColor();
-    activeShape.color.push(color);
-    setActorColor(activeShape.actor, color);
+    activeShape.back().color.push(color);
+    setActorColor(activeShape.back());
+}
+
+
+void MainWindow::onChangeScaleClick() {
+    double scale = ui->lineEdit_Scale->text().toDouble();
+    activeShape.back().actor->SetScale(scale);
+    renderScreen();
 }
 
 void MainWindow::onDrawClick() {
+    Shape shape = Shape::GetShape(ui->comboBox3DObjects->currentText());
+    addShapeToRenderer(shape);
+    renderScreen();
 
-
-    if (ui->comboBox3DObjects->currentText() == "Sphere") {
-        onDrawSphereClick();
-    }
-    else if (ui->comboBox3DObjects->currentText() == "Cube") {
-        onDrawCubeClick();
-    }
-    else if (ui->comboBox3DObjects->currentText() == "Cone") {
-        onDrawConeClick();
-    }
-    else if (ui->comboBox3DObjects->currentText() == "Cylinder") {
-        onDrawCylinderClick();
-    }
-    else if (ui->comboBox3DObjects->currentText() == "Pyramid") {
-        onDrawPyramidClick();
-    }
-    else if (ui->comboBox3DObjects->currentText() == "Tube") {
-        onDrawTubeClick();
-    }
-    else if (ui->comboBox3DObjects->currentText() == "Doughnut") {
-        onDrawDoughnutClick();
-    }
-    else if (ui->comboBox3DObjects->currentText() == "CurvedCylinder") {
-        onDrawCurvedCylinderClick();
-    }
-    else if (ui->comboBox3DObjects->currentText() == "Himisphere") {
-        onDrawHimisphereClick();
-    }
 }
-
-
-void MainWindow::onDrawSphereClick() {
-    Shape shape = Sphere();
-    renderShape(shape);
-}
-void MainWindow::onDrawCubeClick() {
-    Shape shape = Cube();
-    renderShape(shape);
-}
-void MainWindow::onDrawConeClick() {
-    Shape shape = Cone();
-    renderShape(shape);
-}
-void MainWindow::onDrawCylinderClick() {
-    Shape shape = Cylinder();
-    renderShape(shape);
-}
-void MainWindow::onDrawPyramidClick() {
-    Shape shape = Pyramid();
-    renderShape(shape);
-}
-
-void MainWindow::renderShape(Shape shape) {
-    mRenderer->RemoveActor(activeShape.actor);
+void MainWindow::addShapeToRenderer(Shape shape) {
     mRenderer->AddViewProp(shape.actor);
+    activeShape.push_back(shape);
+}
+void MainWindow::renderScreen() {
     mRenderer->ResetCamera();
     mRenderWindow->Render();
-    activeShape = shape;
 }
 
-void MainWindow::setActorColor(vtkSmartPointer <vtkActor> actor , QColor color) {
-    actor->GetProperty()->SetColor(color.red() / 100., color.green() / 100., color.blue() / 100);
-    mRenderer->ResetCamera();
-    mRenderWindow->Render();
+void MainWindow::addDeleteShapeClick() {
+    removeShape(activeShape.back());
+    renderScreen();
+    activeShape.pop_back();
+}
+
+void MainWindow::removeShape(Shape shape) {
+    mRenderer->RemoveActor(shape.actor);
+}
+
+void MainWindow::setActorColor(Shape shape) {
+    QColor color = shape.color.top();
+    shape.actor->GetProperty()->SetColor(color.red() / 100., color.green() / 100., color.blue() / 100);
+    renderScreen();
 }
 
 void MainWindow::onUndoColorClick() {
     
-    if (activeShape.color.size() > 1) {
-        activeShape.color.pop();
-        setActorColor(activeShape.actor, activeShape.color.top());
+    if (activeShape.back().color.size() > 1) {
+        activeShape.back().redosColor.push(activeShape.back().color.top());
+        activeShape.back().color.pop();
+        setActorColor(activeShape.back());
     }
-
 }
 
-void MainWindow::onDrawTubeClick() {
+void MainWindow::onRedoColorClick() {
 
+    if (activeShape.back().redosColor.size() > 0) {
+        activeShape.back().color.push(activeShape.back().redosColor.top());
+        activeShape.back().redosColor.pop();
+        setActorColor(activeShape.back());
+    }
 }
-void MainWindow::onDrawHimisphereClick() {}
-void MainWindow::onDrawDoughnutClick() {}
-void MainWindow::onDrawCurvedCylinderClick() {}

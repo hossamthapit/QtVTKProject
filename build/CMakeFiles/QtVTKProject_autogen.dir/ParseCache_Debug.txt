@@ -54,7 +54,6 @@ C:/QTVTKProject/include/MainWindow.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkSetGet.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkSmartPointer.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkSmartPointerBase.h
- mdp:C:/Program Files/VTK/include/vtk-9.2/vtkStdString.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkSystemIncludes.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkTDxConfigure.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkTimeStamp.h
@@ -188,7 +187,6 @@ C:/QTVTKProject/include/MainWindow.h
  mdp:C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qutf8stringview.h
  mdp:C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qvariant.h
  mdp:C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qvarlengtharray.h
- mdp:C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qvector.h
  mdp:C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qversiontagging.h
  mdp:C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qxptype_traits.h
  mdp:C:/QtNEW/6.5.1/msvc2019_64/include/QtGui/qaction.h

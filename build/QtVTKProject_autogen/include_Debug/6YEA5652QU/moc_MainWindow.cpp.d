@@ -1,4 +1,4 @@
-C:/QTVTKProject/build/QtVTKProject_autogen/include_Release/6YEA5652QU/moc_MainWindow.cpp: C:/QTVTKProject/include/MainWindow.h \
+C:/QTVTKProject/build/QtVTKProject_autogen/include_Debug/6YEA5652QU/moc_MainWindow.cpp: C:/QTVTKProject/include/MainWindow.h \
   C:/Program\ Files/VTK/include/vtk-9.2/QVTKInteractor.h \
   C:/Program\ Files/VTK/include/vtk-9.2/QVTKWin32Header.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkABI.h \
@@ -50,7 +50,6 @@ C:/QTVTKProject/build/QtVTKProject_autogen/include_Release/6YEA5652QU/moc_MainWi
   C:/Program\ Files/VTK/include/vtk-9.2/vtkSetGet.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkSmartPointer.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkSmartPointerBase.h \
-  C:/Program\ Files/VTK/include/vtk-9.2/vtkStdString.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkSystemIncludes.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkTDxConfigure.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkTimeStamp.h \
@@ -183,7 +182,6 @@ C:/QTVTKProject/build/QtVTKProject_autogen/include_Release/6YEA5652QU/moc_MainWi
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qutf8stringview.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qvariant.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qvarlengtharray.h \
-  C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qvector.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qversiontagging.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qxptype_traits.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtGui/qaction.h \

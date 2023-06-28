@@ -8,7 +8,7 @@
 #include <vtkActor.h>
 #include <QVTKInteractor.h>
 #include <vtkInteractorStyle.h>
-
+#include <qvector.h>
 
 
 namespace Ui {
@@ -29,8 +29,7 @@ private:
 
 
 public:
-    Shape activeShape;
-
+    QVector < Shape > activeShape;
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
@@ -38,23 +37,17 @@ public slots :
     
     void onChooseColorClick();
     void onDrawClick();
+    void onChangeScaleClick();
+    void removeShape(Shape shape);
 
-    void onDrawSphereClick();
-    void onDrawCubeClick();
-    void onDrawConeClick();
-    void onDrawCylinderClick();
-    
-    void onDrawHimisphereClick();
-    void onDrawPyramidClick();
-    void onDrawTubeClick();
-    void onDrawDoughnutClick();
-    void onDrawCurvedCylinderClick();
-
-    void renderShape(Shape shape);
+    void renderScreen();
+    void addShapeToRenderer(Shape shape);
+    void addDeleteShapeClick();
     void setMouseMovement();
     void setUiConnection();
-    void setActorColor(vtkSmartPointer <vtkActor> actor, QColor color);
+    void setActorColor(Shape shape);
     void onUndoColorClick();
+    void onRedoColorClick();
     // void changeOpacity();
 };
 

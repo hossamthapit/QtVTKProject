@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.6.3+07e294721 for .NET Framework
-      Build started 6/26/2023 4:19:16 PM.
+      Build started 6/28/2023 2:48:35 PM.
       
       Project "C:\\QTVTKProject\\build\\CMakeFiles\\3.27.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -51,7 +51,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:02.78
+      Time Elapsed 00:00:07.12
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -77,7 +77,7 @@ events:
       The output was:
       0
       MSBuild version 17.6.3+07e294721 for .NET Framework
-      Build started 6/26/2023 4:19:21 PM.
+      Build started 6/28/2023 2:48:43 PM.
       
       Project "C:\\QTVTKProject\\build\\CMakeFiles\\3.27.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -104,7 +104,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:01.20
+      Time Elapsed 00:00:01.06
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -123,8 +123,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-73rpr5"
-      binary: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-73rpr5"
+      source: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-7cv5wk"
+      binary: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-7cv5wk"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -133,38 +133,38 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-73rpr5'
+        Change Dir: 'C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-7cv5wk'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c148b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7b2ba.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.6.3+07e294721 for .NET Framework
-        Build started 6/26/2023 4:19:23 PM.
+        Build started 6/28/2023 2:48:45 PM.
         
-        Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-73rpr5\\cmTC_c148b.vcxproj" on node 1 (default targets).
+        Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7cv5wk\\cmTC_7b2ba.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_c148b.dir\\Debug\\".
-          Creating directory "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-73rpr5\\Debug\\".
-          Creating directory "cmTC_c148b.dir\\Debug\\cmTC_c148b.tlog\\".
+          Creating directory "cmTC_7b2ba.dir\\Debug\\".
+          Creating directory "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7cv5wk\\Debug\\".
+          Creating directory "cmTC_7b2ba.dir\\Debug\\cmTC_7b2ba.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_c148b.dir\\Debug\\cmTC_c148b.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_7b2ba.dir\\Debug\\cmTC_7b2ba.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c148b.dir\\Debug\\\\" /Fd"cmTC_c148b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7b2ba.dir\\Debug\\\\" /Fd"cmTC_7b2ba.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32534 for x64
           CMakeCCompilerABI.c
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c148b.dir\\Debug\\\\" /Fd"cmTC_c148b.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7b2ba.dir\\Debug\\\\" /Fd"cmTC_7b2ba.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-73rpr5\\Debug\\cmTC_c148b.exe" /INCREMENTAL /ILK:"cmTC_c148b.dir\\Debug\\cmTC_c148b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-73rpr5/Debug/cmTC_c148b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-73rpr5/Debug/cmTC_c148b.lib" /MACHINE:X64  /machine:x64 cmTC_c148b.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_c148b.vcxproj -> C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-73rpr5\\Debug\\cmTC_c148b.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7cv5wk\\Debug\\cmTC_7b2ba.exe" /INCREMENTAL /ILK:"cmTC_7b2ba.dir\\Debug\\cmTC_7b2ba.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-7cv5wk/Debug/cmTC_7b2ba.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-7cv5wk/Debug/cmTC_7b2ba.lib" /MACHINE:X64  /machine:x64 cmTC_7b2ba.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_7b2ba.vcxproj -> C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7cv5wk\\Debug\\cmTC_7b2ba.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_c148b.dir\\Debug\\cmTC_c148b.tlog\\unsuccessfulbuild".
-          Touching "cmTC_c148b.dir\\Debug\\cmTC_c148b.tlog\\cmTC_c148b.lastbuildstate".
-        Done Building Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-73rpr5\\cmTC_c148b.vcxproj" (default targets).
+          Deleting file "cmTC_7b2ba.dir\\Debug\\cmTC_7b2ba.tlog\\unsuccessfulbuild".
+          Touching "cmTC_7b2ba.dir\\Debug\\cmTC_7b2ba.tlog\\cmTC_7b2ba.lastbuildstate".
+        Done Building Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7cv5wk\\cmTC_7b2ba.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:02.12
+        Time Elapsed 00:00:01.59
         
       exitCode: 0
   -
@@ -176,8 +176,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-wspjvc"
-      binary: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-wspjvc"
+      source: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-sagdh4"
+      binary: "C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-sagdh4"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
@@ -186,38 +186,38 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-wspjvc'
+        Change Dir: 'C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-sagdh4'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a82cd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9bee8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.6.3+07e294721 for .NET Framework
-        Build started 6/26/2023 4:19:26 PM.
+        Build started 6/28/2023 2:48:48 PM.
         
-        Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wspjvc\\cmTC_a82cd.vcxproj" on node 1 (default targets).
+        Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sagdh4\\cmTC_9bee8.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_a82cd.dir\\Debug\\".
-          Creating directory "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wspjvc\\Debug\\".
-          Creating directory "cmTC_a82cd.dir\\Debug\\cmTC_a82cd.tlog\\".
+          Creating directory "cmTC_9bee8.dir\\Debug\\".
+          Creating directory "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sagdh4\\Debug\\".
+          Creating directory "cmTC_9bee8.dir\\Debug\\cmTC_9bee8.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_a82cd.dir\\Debug\\cmTC_a82cd.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Creating "cmTC_9bee8.dir\\Debug\\cmTC_9bee8.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_a82cd.dir\\Debug\\\\" /Fd"cmTC_a82cd.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_9bee8.dir\\Debug\\\\" /Fd"cmTC_9bee8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.36.32534 for x64
           CMakeCXXCompilerABI.cpp
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_a82cd.dir\\Debug\\\\" /Fd"cmTC_a82cd.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_9bee8.dir\\Debug\\\\" /Fd"cmTC_9bee8.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wspjvc\\Debug\\cmTC_a82cd.exe" /INCREMENTAL /ILK:"cmTC_a82cd.dir\\Debug\\cmTC_a82cd.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-wspjvc/Debug/cmTC_a82cd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-wspjvc/Debug/cmTC_a82cd.lib" /MACHINE:X64  /machine:x64 cmTC_a82cd.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_a82cd.vcxproj -> C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wspjvc\\Debug\\cmTC_a82cd.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.36.32532\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sagdh4\\Debug\\cmTC_9bee8.exe" /INCREMENTAL /ILK:"cmTC_9bee8.dir\\Debug\\cmTC_9bee8.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-sagdh4/Debug/cmTC_9bee8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/QTVTKProject/build/CMakeFiles/CMakeScratch/TryCompile-sagdh4/Debug/cmTC_9bee8.lib" /MACHINE:X64  /machine:x64 cmTC_9bee8.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_9bee8.vcxproj -> C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sagdh4\\Debug\\cmTC_9bee8.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_a82cd.dir\\Debug\\cmTC_a82cd.tlog\\unsuccessfulbuild".
-          Touching "cmTC_a82cd.dir\\Debug\\cmTC_a82cd.tlog\\cmTC_a82cd.lastbuildstate".
-        Done Building Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-wspjvc\\cmTC_a82cd.vcxproj" (default targets).
+          Deleting file "cmTC_9bee8.dir\\Debug\\cmTC_9bee8.tlog\\unsuccessfulbuild".
+          Touching "cmTC_9bee8.dir\\Debug\\cmTC_9bee8.tlog\\cmTC_9bee8.lastbuildstate".
+        Done Building Project "C:\\QTVTKProject\\build\\CMakeFiles\\CMakeScratch\\TryCompile-sagdh4\\cmTC_9bee8.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:01.06
+        Time Elapsed 00:00:00.98
         
       exitCode: 0
 ...

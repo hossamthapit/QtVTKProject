@@ -42,38 +42,52 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "onChooseColorClick",
     "",
     "onDrawClick",
-    "onChangeScaleClick",
-    "removeShape",
+    "onDrawSphereClick",
+    "onDrawCubeClick",
+    "onDrawConeClick",
+    "onDrawCylinderClick",
+    "onDrawHimisphereClick",
+    "onDrawPyramidClick",
+    "onDrawTubeClick",
+    "onDrawDoughnutClick",
+    "onDrawCurvedCylinderClick",
+    "renderShape",
     "Shape",
     "shape",
-    "renderScreen",
-    "addShapeToRenderer",
-    "addDeleteShapeClick",
     "setMouseMovement",
     "setUiConnection",
     "setActorColor",
-    "onUndoColorClick",
-    "onRedoColorClick"
+    "vtkSmartPointer<vtkActor>",
+    "actor",
+    "color",
+    "onUndoColorClick"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[32];
+    uint offsetsAndSizes[46];
     char stringdata0[11];
     char stringdata1[19];
     char stringdata2[1];
     char stringdata3[12];
-    char stringdata4[19];
-    char stringdata5[12];
-    char stringdata6[6];
-    char stringdata7[6];
-    char stringdata8[13];
+    char stringdata4[18];
+    char stringdata5[16];
+    char stringdata6[16];
+    char stringdata7[20];
+    char stringdata8[22];
     char stringdata9[19];
-    char stringdata10[20];
-    char stringdata11[17];
-    char stringdata12[16];
-    char stringdata13[14];
-    char stringdata14[17];
-    char stringdata15[17];
+    char stringdata10[16];
+    char stringdata11[20];
+    char stringdata12[26];
+    char stringdata13[12];
+    char stringdata14[6];
+    char stringdata15[6];
+    char stringdata16[17];
+    char stringdata17[16];
+    char stringdata18[14];
+    char stringdata19[26];
+    char stringdata20[6];
+    char stringdata21[6];
+    char stringdata22[17];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -83,35 +97,49 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(11, 18),  // "onChooseColorClick"
         QT_MOC_LITERAL(30, 0),  // ""
         QT_MOC_LITERAL(31, 11),  // "onDrawClick"
-        QT_MOC_LITERAL(43, 18),  // "onChangeScaleClick"
-        QT_MOC_LITERAL(62, 11),  // "removeShape"
-        QT_MOC_LITERAL(74, 5),  // "Shape"
-        QT_MOC_LITERAL(80, 5),  // "shape"
-        QT_MOC_LITERAL(86, 12),  // "renderScreen"
-        QT_MOC_LITERAL(99, 18),  // "addShapeToRenderer"
-        QT_MOC_LITERAL(118, 19),  // "addDeleteShapeClick"
-        QT_MOC_LITERAL(138, 16),  // "setMouseMovement"
-        QT_MOC_LITERAL(155, 15),  // "setUiConnection"
-        QT_MOC_LITERAL(171, 13),  // "setActorColor"
-        QT_MOC_LITERAL(185, 16),  // "onUndoColorClick"
-        QT_MOC_LITERAL(202, 16)   // "onRedoColorClick"
+        QT_MOC_LITERAL(43, 17),  // "onDrawSphereClick"
+        QT_MOC_LITERAL(61, 15),  // "onDrawCubeClick"
+        QT_MOC_LITERAL(77, 15),  // "onDrawConeClick"
+        QT_MOC_LITERAL(93, 19),  // "onDrawCylinderClick"
+        QT_MOC_LITERAL(113, 21),  // "onDrawHimisphereClick"
+        QT_MOC_LITERAL(135, 18),  // "onDrawPyramidClick"
+        QT_MOC_LITERAL(154, 15),  // "onDrawTubeClick"
+        QT_MOC_LITERAL(170, 19),  // "onDrawDoughnutClick"
+        QT_MOC_LITERAL(190, 25),  // "onDrawCurvedCylinderClick"
+        QT_MOC_LITERAL(216, 11),  // "renderShape"
+        QT_MOC_LITERAL(228, 5),  // "Shape"
+        QT_MOC_LITERAL(234, 5),  // "shape"
+        QT_MOC_LITERAL(240, 16),  // "setMouseMovement"
+        QT_MOC_LITERAL(257, 15),  // "setUiConnection"
+        QT_MOC_LITERAL(273, 13),  // "setActorColor"
+        QT_MOC_LITERAL(287, 25),  // "vtkSmartPointer<vtkActor>"
+        QT_MOC_LITERAL(313, 5),  // "actor"
+        QT_MOC_LITERAL(319, 5),  // "color"
+        QT_MOC_LITERAL(325, 16)   // "onUndoColorClick"
     },
     "MainWindow",
     "onChooseColorClick",
     "",
     "onDrawClick",
-    "onChangeScaleClick",
-    "removeShape",
+    "onDrawSphereClick",
+    "onDrawCubeClick",
+    "onDrawConeClick",
+    "onDrawCylinderClick",
+    "onDrawHimisphereClick",
+    "onDrawPyramidClick",
+    "onDrawTubeClick",
+    "onDrawDoughnutClick",
+    "onDrawCurvedCylinderClick",
+    "renderShape",
     "Shape",
     "shape",
-    "renderScreen",
-    "addShapeToRenderer",
-    "addDeleteShapeClick",
     "setMouseMovement",
     "setUiConnection",
     "setActorColor",
-    "onUndoColorClick",
-    "onRedoColorClick"
+    "vtkSmartPointer<vtkActor>",
+    "actor",
+    "color",
+    "onUndoColorClick"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -123,7 +151,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-      12,   14, // methods
+      16,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -131,31 +159,39 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   86,    2, 0x0a,    1 /* Public */,
-       3,    0,   87,    2, 0x0a,    2 /* Public */,
-       4,    0,   88,    2, 0x0a,    3 /* Public */,
-       5,    1,   89,    2, 0x0a,    4 /* Public */,
-       8,    0,   92,    2, 0x0a,    6 /* Public */,
-       9,    1,   93,    2, 0x0a,    7 /* Public */,
-      10,    0,   96,    2, 0x0a,    9 /* Public */,
-      11,    0,   97,    2, 0x0a,   10 /* Public */,
-      12,    0,   98,    2, 0x0a,   11 /* Public */,
-      13,    1,   99,    2, 0x0a,   12 /* Public */,
-      14,    0,  102,    2, 0x0a,   14 /* Public */,
-      15,    0,  103,    2, 0x0a,   15 /* Public */,
+       1,    0,  110,    2, 0x0a,    1 /* Public */,
+       3,    0,  111,    2, 0x0a,    2 /* Public */,
+       4,    0,  112,    2, 0x0a,    3 /* Public */,
+       5,    0,  113,    2, 0x0a,    4 /* Public */,
+       6,    0,  114,    2, 0x0a,    5 /* Public */,
+       7,    0,  115,    2, 0x0a,    6 /* Public */,
+       8,    0,  116,    2, 0x0a,    7 /* Public */,
+       9,    0,  117,    2, 0x0a,    8 /* Public */,
+      10,    0,  118,    2, 0x0a,    9 /* Public */,
+      11,    0,  119,    2, 0x0a,   10 /* Public */,
+      12,    0,  120,    2, 0x0a,   11 /* Public */,
+      13,    1,  121,    2, 0x0a,   12 /* Public */,
+      16,    0,  124,    2, 0x0a,   14 /* Public */,
+      17,    0,  125,    2, 0x0a,   15 /* Public */,
+      18,    2,  126,    2, 0x0a,   16 /* Public */,
+      22,    0,  131,    2, 0x0a,   19 /* Public */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 6,    7,
-    QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 6,    7,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, 0x80000000 | 6,    7,
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 14,   15,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 19, QMetaType::QColor,   20,   21,
     QMetaType::Void,
 
        0        // eod
@@ -174,28 +210,36 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'onDrawClick'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onChangeScaleClick'
+        // method 'onDrawSphereClick'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'removeShape'
+        // method 'onDrawCubeClick'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onDrawConeClick'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onDrawCylinderClick'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onDrawHimisphereClick'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onDrawPyramidClick'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onDrawTubeClick'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onDrawDoughnutClick'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'onDrawCurvedCylinderClick'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'renderShape'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<Shape, std::false_type>,
-        // method 'renderScreen'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'addShapeToRenderer'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<Shape, std::false_type>,
-        // method 'addDeleteShapeClick'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'setMouseMovement'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'setUiConnection'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'setActorColor'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<Shape, std::false_type>,
+        QtPrivate::TypeAndForceComplete<vtkSmartPointer<vtkActor>, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QColor, std::false_type>,
         // method 'onUndoColorClick'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'onRedoColorClick'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -209,16 +253,20 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->onChooseColorClick(); break;
         case 1: _t->onDrawClick(); break;
-        case 2: _t->onChangeScaleClick(); break;
-        case 3: _t->removeShape((*reinterpret_cast< std::add_pointer_t<Shape>>(_a[1]))); break;
-        case 4: _t->renderScreen(); break;
-        case 5: _t->addShapeToRenderer((*reinterpret_cast< std::add_pointer_t<Shape>>(_a[1]))); break;
-        case 6: _t->addDeleteShapeClick(); break;
-        case 7: _t->setMouseMovement(); break;
-        case 8: _t->setUiConnection(); break;
-        case 9: _t->setActorColor((*reinterpret_cast< std::add_pointer_t<Shape>>(_a[1]))); break;
-        case 10: _t->onUndoColorClick(); break;
-        case 11: _t->onRedoColorClick(); break;
+        case 2: _t->onDrawSphereClick(); break;
+        case 3: _t->onDrawCubeClick(); break;
+        case 4: _t->onDrawConeClick(); break;
+        case 5: _t->onDrawCylinderClick(); break;
+        case 6: _t->onDrawHimisphereClick(); break;
+        case 7: _t->onDrawPyramidClick(); break;
+        case 8: _t->onDrawTubeClick(); break;
+        case 9: _t->onDrawDoughnutClick(); break;
+        case 10: _t->onDrawCurvedCylinderClick(); break;
+        case 11: _t->renderShape((*reinterpret_cast< std::add_pointer_t<Shape>>(_a[1]))); break;
+        case 12: _t->setMouseMovement(); break;
+        case 13: _t->setUiConnection(); break;
+        case 14: _t->setActorColor((*reinterpret_cast< std::add_pointer_t<vtkSmartPointer<vtkActor>>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QColor>>(_a[2]))); break;
+        case 15: _t->onUndoColorClick(); break;
         default: ;
         }
     }
@@ -243,13 +291,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 12)
+        if (_id < 16)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 12;
+        _id -= 16;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 12)
+        if (_id < 16)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 12;
+        _id -= 16;
     }
     return _id;
 }
