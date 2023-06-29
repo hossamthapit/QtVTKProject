@@ -46,6 +46,7 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "removeShape",
     "Shape",
     "shape",
+    "colorShape",
     "onChooseColorClick",
     "onUndoColorClick",
     "onRedoColorClick",
@@ -63,7 +64,7 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[44];
+    uint offsetsAndSizes[46];
     char stringdata0[11];
     char stringdata1[16];
     char stringdata2[1];
@@ -72,20 +73,21 @@ struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
     char stringdata5[12];
     char stringdata6[6];
     char stringdata7[6];
-    char stringdata8[19];
-    char stringdata9[17];
+    char stringdata8[11];
+    char stringdata9[19];
     char stringdata10[17];
-    char stringdata11[19];
-    char stringdata12[14];
-    char stringdata13[13];
-    char stringdata14[19];
-    char stringdata15[21];
-    char stringdata16[19];
-    char stringdata17[12];
-    char stringdata18[14];
-    char stringdata19[17];
-    char stringdata20[11];
+    char stringdata11[17];
+    char stringdata12[19];
+    char stringdata13[14];
+    char stringdata14[13];
+    char stringdata15[19];
+    char stringdata16[21];
+    char stringdata17[19];
+    char stringdata18[12];
+    char stringdata19[14];
+    char stringdata20[17];
     char stringdata21[11];
+    char stringdata22[11];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -99,20 +101,21 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(57, 11),  // "removeShape"
         QT_MOC_LITERAL(69, 5),  // "Shape"
         QT_MOC_LITERAL(75, 5),  // "shape"
-        QT_MOC_LITERAL(81, 18),  // "onChooseColorClick"
-        QT_MOC_LITERAL(100, 16),  // "onUndoColorClick"
-        QT_MOC_LITERAL(117, 16),  // "onRedoColorClick"
-        QT_MOC_LITERAL(134, 18),  // "addShapeToRenderer"
-        QT_MOC_LITERAL(153, 13),  // "setActorColor"
-        QT_MOC_LITERAL(167, 12),  // "renderScreen"
-        QT_MOC_LITERAL(180, 18),  // "onDeleteShapeClick"
-        QT_MOC_LITERAL(199, 20),  // "onChangeOpacityClick"
-        QT_MOC_LITERAL(220, 18),  // "onChangeScaleClick"
-        QT_MOC_LITERAL(239, 11),  // "onFlipClick"
-        QT_MOC_LITERAL(251, 13),  // "onRotateClick"
-        QT_MOC_LITERAL(265, 16),  // "onTranslateClick"
-        QT_MOC_LITERAL(282, 10),  // "onSaveFile"
-        QT_MOC_LITERAL(293, 10)   // "onLoadFile"
+        QT_MOC_LITERAL(81, 10),  // "colorShape"
+        QT_MOC_LITERAL(92, 18),  // "onChooseColorClick"
+        QT_MOC_LITERAL(111, 16),  // "onUndoColorClick"
+        QT_MOC_LITERAL(128, 16),  // "onRedoColorClick"
+        QT_MOC_LITERAL(145, 18),  // "addShapeToRenderer"
+        QT_MOC_LITERAL(164, 13),  // "setActorColor"
+        QT_MOC_LITERAL(178, 12),  // "renderScreen"
+        QT_MOC_LITERAL(191, 18),  // "onDeleteShapeClick"
+        QT_MOC_LITERAL(210, 20),  // "onChangeOpacityClick"
+        QT_MOC_LITERAL(231, 18),  // "onChangeScaleClick"
+        QT_MOC_LITERAL(250, 11),  // "onFlipClick"
+        QT_MOC_LITERAL(262, 13),  // "onRotateClick"
+        QT_MOC_LITERAL(276, 16),  // "onTranslateClick"
+        QT_MOC_LITERAL(293, 10),  // "onSaveFile"
+        QT_MOC_LITERAL(304, 10)   // "onLoadFile"
     },
     "MainWindow",
     "setUiConnection",
@@ -122,6 +125,7 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
     "removeShape",
     "Shape",
     "shape",
+    "colorShape",
     "onChooseColorClick",
     "onUndoColorClick",
     "onRedoColorClick",
@@ -147,7 +151,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       11,       // revision
        0,       // classname
        0,    0, // classinfo
-      18,   14, // methods
+      19,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -155,29 +159,31 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,  122,    2, 0x0a,    1 /* Public */,
-       3,    0,  123,    2, 0x0a,    2 /* Public */,
-       4,    0,  124,    2, 0x0a,    3 /* Public */,
-       5,    1,  125,    2, 0x0a,    4 /* Public */,
-       8,    0,  128,    2, 0x0a,    6 /* Public */,
-       9,    0,  129,    2, 0x0a,    7 /* Public */,
-      10,    0,  130,    2, 0x0a,    8 /* Public */,
-      11,    1,  131,    2, 0x0a,    9 /* Public */,
-      12,    1,  134,    2, 0x0a,   11 /* Public */,
-      13,    0,  137,    2, 0x0a,   13 /* Public */,
-      14,    0,  138,    2, 0x0a,   14 /* Public */,
-      15,    0,  139,    2, 0x0a,   15 /* Public */,
-      16,    0,  140,    2, 0x0a,   16 /* Public */,
-      17,    0,  141,    2, 0x0a,   17 /* Public */,
-      18,    0,  142,    2, 0x0a,   18 /* Public */,
-      19,    0,  143,    2, 0x0a,   19 /* Public */,
-      20,    0,  144,    2, 0x0a,   20 /* Public */,
-      21,    0,  145,    2, 0x0a,   21 /* Public */,
+       1,    0,  128,    2, 0x0a,    1 /* Public */,
+       3,    0,  129,    2, 0x0a,    2 /* Public */,
+       4,    0,  130,    2, 0x0a,    3 /* Public */,
+       5,    1,  131,    2, 0x0a,    4 /* Public */,
+       8,    1,  134,    2, 0x0a,    6 /* Public */,
+       9,    0,  137,    2, 0x0a,    8 /* Public */,
+      10,    0,  138,    2, 0x0a,    9 /* Public */,
+      11,    0,  139,    2, 0x0a,   10 /* Public */,
+      12,    1,  140,    2, 0x0a,   11 /* Public */,
+      13,    1,  143,    2, 0x0a,   13 /* Public */,
+      14,    0,  146,    2, 0x0a,   15 /* Public */,
+      15,    0,  147,    2, 0x0a,   16 /* Public */,
+      16,    0,  148,    2, 0x0a,   17 /* Public */,
+      17,    0,  149,    2, 0x0a,   18 /* Public */,
+      18,    0,  150,    2, 0x0a,   19 /* Public */,
+      19,    0,  151,    2, 0x0a,   20 /* Public */,
+      20,    0,  152,    2, 0x0a,   21 /* Public */,
+      21,    0,  153,    2, 0x0a,   22 /* Public */,
+      22,    0,  154,    2, 0x0a,   23 /* Public */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 6,    7,
     QMetaType::Void, 0x80000000 | 6,    7,
     QMetaType::Void,
     QMetaType::Void,
@@ -213,6 +219,9 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'onDrawClick'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'removeShape'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<Shape, std::false_type>,
+        // method 'colorShape'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<Shape, std::false_type>,
         // method 'onChooseColorClick'
@@ -259,20 +268,21 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 1: _t->setMouseMovement(); break;
         case 2: _t->onDrawClick(); break;
         case 3: _t->removeShape((*reinterpret_cast< std::add_pointer_t<Shape>>(_a[1]))); break;
-        case 4: _t->onChooseColorClick(); break;
-        case 5: _t->onUndoColorClick(); break;
-        case 6: _t->onRedoColorClick(); break;
-        case 7: _t->addShapeToRenderer((*reinterpret_cast< std::add_pointer_t<Shape>>(_a[1]))); break;
-        case 8: _t->setActorColor((*reinterpret_cast< std::add_pointer_t<Shape>>(_a[1]))); break;
-        case 9: _t->renderScreen(); break;
-        case 10: _t->onDeleteShapeClick(); break;
-        case 11: _t->onChangeOpacityClick(); break;
-        case 12: _t->onChangeScaleClick(); break;
-        case 13: _t->onFlipClick(); break;
-        case 14: _t->onRotateClick(); break;
-        case 15: _t->onTranslateClick(); break;
-        case 16: _t->onSaveFile(); break;
-        case 17: _t->onLoadFile(); break;
+        case 4: _t->colorShape((*reinterpret_cast< std::add_pointer_t<Shape>>(_a[1]))); break;
+        case 5: _t->onChooseColorClick(); break;
+        case 6: _t->onUndoColorClick(); break;
+        case 7: _t->onRedoColorClick(); break;
+        case 8: _t->addShapeToRenderer((*reinterpret_cast< std::add_pointer_t<Shape>>(_a[1]))); break;
+        case 9: _t->setActorColor((*reinterpret_cast< std::add_pointer_t<Shape>>(_a[1]))); break;
+        case 10: _t->renderScreen(); break;
+        case 11: _t->onDeleteShapeClick(); break;
+        case 12: _t->onChangeOpacityClick(); break;
+        case 13: _t->onChangeScaleClick(); break;
+        case 14: _t->onFlipClick(); break;
+        case 15: _t->onRotateClick(); break;
+        case 16: _t->onTranslateClick(); break;
+        case 17: _t->onSaveFile(); break;
+        case 18: _t->onLoadFile(); break;
         default: ;
         }
     }
@@ -297,13 +307,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 18)
+        if (_id < 19)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 18;
+        _id -= 19;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 18)
+        if (_id < 19)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 18;
+        _id -= 19;
     }
     return _id;
 }

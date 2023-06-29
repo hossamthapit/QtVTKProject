@@ -4,27 +4,58 @@ C:/QTVTKProject/include/MainWindow.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/QVTKInteractor.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/QVTKWin32Header.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkABI.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkAOSDataArrayTemplate.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkAbstractArray.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkAbstractCellLinks.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkAbstractMapper.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkAbstractMapper3D.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkActor.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkActorCollection.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkAlgorithm.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkAlgorithmOutput.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkAssume.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkBoundingBox.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkBuffer.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkBuild.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkCell.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkCellArray.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkCellLinks.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkCellType.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkCellTypes.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkCollection.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkCommand.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkCommonCoreModule.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkCommonDataModelModule.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkCommonExecutionModelModule.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkCompiler.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkDataArray.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkDataArrayAccessor.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkDataArrayMeta.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkDataArrayRange.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkDataArrayTupleRange_AOS.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkDataArrayTupleRange_Generic.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkDataArrayValueRange_AOS.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkDataArrayValueRange_Generic.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkDataObject.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkDataSet.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkDebugLeaksManager.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkDebugRangeIterators.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkDeprecation.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkEmptyCell.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkEventData.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkFeatures.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkFiltersCoreModule.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkGUISupportQtModule.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkGenericCell.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkGenericDataArray.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkGenericDataArray.txx
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkGenericDataArrayLookupHelper.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkGenericOpenGLRenderWindow.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkIOStream.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkIdList.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkIdTypeArray.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkIndent.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkIntArray.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkInteractorObserver.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkInteractorStyle.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkLegacy.h
@@ -39,9 +70,15 @@ C:/QTVTKProject/include/MainWindow.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkOStreamWrapper.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkObject.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkObjectBase.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkObjectFactory.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkOpenGLRenderWindow.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkOptions.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkPlatform.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkPointSet.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkPoints.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkPolyData.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkPolyDataAlgorithm.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkPolyDataInternals.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkPolyDataMapper.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkProp.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkProp3D.h
@@ -64,7 +101,17 @@ C:/QTVTKProject/include/MainWindow.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkTimeStamp.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkTuple.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkType.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkTypeInt32Array.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkTypeInt64Array.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkTypeList.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkTypeList.txx
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkTypeListMacros.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkTypeTraits.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkUnsignedCharArray.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkVTK_USE_SCALED_SOA_ARRAYS.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkVariant.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkVariantCast.h
+ mdp:C:/Program Files/VTK/include/vtk-9.2/vtkVariantInlineOperators.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkVector.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkVersionMacros.h
  mdp:C:/Program Files/VTK/include/vtk-9.2/vtkViewport.h
@@ -244,3 +291,5 @@ C:/QTVTKProject/src/Sphere.cpp
  uic:ui_MainWindow.h
 C:/QTVTKProject/src/ShapeOperations.cpp
 C:/QTVTKProject/src/main.cpp
+C:/QTVTKProject/include/settings.h
+C:/QTVTKProject/src/settings.cpp

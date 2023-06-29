@@ -27,67 +27,59 @@
 #include <vtkRenderer.h>
 #include <vtkUnstructuredGrid.h>
 
-vtkSmartPointer<vtkActor> setShapeActor(vtkSmartPointer<vtkPolyDataMapper> shapeMapper);
+
 
 Sphere::Sphere() {
-	
-    vtkSmartPointer<vtkSphereSource> sphere = vtkSmartPointer<vtkSphereSource>::New();
-    
-    sphere->SetCenter(0.0, 0.0, 0.0);
-    sphere->SetRadius(5.0);
-    sphere->SetPhiResolution(100);
-    sphere->SetThetaResolution(100);
+    source = vtkSmartPointer<vtkSphereSource>::New();
 
-    vtkSmartPointer<vtkPolyDataMapper> sphereMapper = vtkSmartPointer<vtkPolyDataMapper>::New();
-    sphereMapper->SetInputConnection(sphere->GetOutputPort());
+    source->SetCenter(0.0, 0.0, 0.0);
+    source->SetRadius(5.0);
+    source->SetPhiResolution(100);
+    source->SetThetaResolution(100);
 
-    vtkShape = sphereMapper;
-    
-    actor = setShapeActor(sphereMapper);
+    shapeSource = source;
+    setInputConnection(source->GetOutputPort());
+    setMapper(mapper);
 
 }
 
 
 Cube::Cube() {
-    vtkSmartPointer<vtkCubeSource> cube = vtkSmartPointer<vtkCubeSource>::New();
-    cube->SetXLength(8);
-    cube->SetYLength(8);
-    cube->SetZLength(8);
+    source = vtkSmartPointer<vtkCubeSource>::New();
+    source->SetXLength(8);
+    source->SetYLength(8);
+    source->SetZLength(8);
 
-    vtkSmartPointer<vtkPolyDataMapper> cubeMapper = vtkSmartPointer<vtkPolyDataMapper>::New();
-    cubeMapper->SetInputConnection(cube->GetOutputPort());
-
-    actor = setShapeActor(cubeMapper);
+    shapeSource = source;
+    setInputConnection(source->GetOutputPort());
+    setMapper(mapper);
 
 }
 
 Cone::Cone()
 {
-    vtkSmartPointer<vtkConeSource> cone = vtkSmartPointer<vtkConeSource>::New();
-    cone->SetRadius(8);
-    cone->SetHeight(10);
+    source = vtkSmartPointer<vtkConeSource>::New();
+    source->SetRadius(8);
+    source->SetHeight(10);
 
-    vtkSmartPointer<vtkPolyDataMapper> coneMapper = vtkSmartPointer<vtkPolyDataMapper>::New();
-    coneMapper->SetInputConnection(cone->GetOutputPort());
-
-    actor = setShapeActor(coneMapper);
+    shapeSource = source;
+    setInputConnection(source->GetOutputPort());
+    setMapper(mapper);
 }
 
 
 Cylinder::Cylinder()
 {
 
-    vtkSmartPointer<vtkCylinderSource> cylinder = vtkSmartPointer<vtkCylinderSource>::New();
-    cylinder->SetCenter(0.0, 0.0, 0.0);
-    cylinder->SetRadius(5.0);
-    cylinder->SetHeight(7.0);
-    cylinder->SetResolution(100);
+    source = vtkSmartPointer<vtkCylinderSource>::New();
+    source->SetCenter(0.0, 0.0, 0.0);
+    source->SetRadius(5.0);
+    source->SetHeight(7.0);
+    source->SetResolution(100);
 
-
-    vtkSmartPointer<vtkPolyDataMapper> cylinderMapper = vtkSmartPointer<vtkPolyDataMapper>::New();
-    cylinderMapper->SetInputConnection(cylinder->GetOutputPort());
-
-    actor = setShapeActor(cylinderMapper);
+    shapeSource = source;
+    setInputConnection(source->GetOutputPort());
+    setMapper(mapper);
 }
 
 Pyramid::Pyramid()
@@ -127,10 +119,4 @@ Pyramid::Pyramid()
     actor->SetMapper(mapper);
 
     this->actor = actor;
-}
-
-vtkSmartPointer<vtkActor> setShapeActor(vtkSmartPointer<vtkPolyDataMapper> shapeMapper) {
-    vtkSmartPointer<vtkActor> shapeActor = vtkSmartPointer<vtkActor>::New();
-    shapeActor->SetMapper(shapeMapper);
-    return shapeActor;
 }

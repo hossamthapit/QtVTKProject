@@ -41,6 +41,7 @@ public slots :
     void onDrawClick();
     void removeShape(Shape shape);
 
+    void colorShape(Shape shape);
     void onChooseColorClick();
     void onUndoColorClick();
     void onRedoColorClick();

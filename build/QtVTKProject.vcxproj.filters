@@ -19,6 +19,9 @@
     <ClCompile Include="C:\QTVTKProject\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\QTVTKProject\src\settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="C:\QTVTKProject\build\QtVTKProject_autogen\mocs_compilation_Release.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -40,6 +43,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\QTVTKProject\include\Sphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\QTVTKProject\include\settings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C:\QTVTKProject\build\QtVTKProject_autogen\include_Debug\forms\ui_MainWindow.h">

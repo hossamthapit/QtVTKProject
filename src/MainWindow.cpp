@@ -24,6 +24,8 @@
 #include <vtkSTLReader.h>
 #include <vtkPolyDataAlgorithm.h>
 #include <vtkSphereSource.h>
+#include <settings.h>
+
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -134,9 +136,12 @@ void MainWindow::onChooseColorClick() {
     if (!activeShape.size())return;
     QColor color = QColorDialog::getColor();
     activeShape.back().color.push(color);
-    setActorColor(activeShape.back());
+    colorShape(activeShape.back());
 }
 
+void MainWindow::colorShape(Shape shape) {
+    setActorColor(shape);
+}
 
 void MainWindow::onChangeScaleClick() {
     if (!activeShape.size())return;
@@ -213,29 +218,18 @@ void MainWindow::onRedoColorClick() {
 
 
 void MainWindow::onSaveFile() {
-
-    vtkSmartPointer<vtkSTLWriter> stlWriter = vtkSmartPointer<vtkSTLWriter>::New();
-    stlWriter->SetFileName("sphere.stl");
-
-    stlWriter->SetInputConnection(activeShape.back().vtkShape->GetOutputPort());
-    stlWriter->Write();
+    const char* mapperPath = "savedData/shapeSource.stl";
+    const char* dataPath = "savedData/shapeData.bin";
+    Settings::SaveShape(activeShape.back(), mapperPath, dataPath);
 }
 
 void MainWindow::onLoadFile() {
-    vtkSmartPointer<vtkSTLReader> reader = vtkSmartPointer<vtkSTLReader>::New();
-    reader->SetFileName("sphere.stl");
-    reader->Update();
 
-    vtkSmartPointer<vtkPolyDataMapper> Mapper = vtkSmartPointer<vtkPolyDataMapper>::New();
-    Mapper->SetInputConnection(reader->GetOutputPort());
+    const char*  mapperPath = "savedData/shapeSource.stl";
+    const char* dataPath = "savedData/shapeData.bin";
 
-    Shape shape = Sphere();
-    shape.actor ->SetMapper(Mapper);
-
+    Shape shape = Settings::LoadShape(mapperPath,dataPath);
+    colorShape(shape);
     addShapeToRenderer(shape);
     renderScreen();
-     
-    //addShapeToRenderer(activeShape.back());
-    //renderScreen();
 }
-

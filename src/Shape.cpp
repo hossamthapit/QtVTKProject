@@ -8,9 +8,22 @@
 #include <vtkPolyDataMapper.h>
 #include <Qcolordialog.h>
 #include "vtkProperty.h"
+#include <vtkPolyDataAlgorithm.h>
+#include <vtkAlgorithmOutput.h>
 
 Shape::Shape() {
+    actor = vtkSmartPointer<vtkActor>::New();
+    mapper = vtkSmartPointer<vtkPolyDataMapper>::New();
+    shapeSource = vtkSmartPointer<vtkPolyDataAlgorithm>::New();
 }
+
+void Shape::setInputConnection(vtkSmartPointer<vtkAlgorithmOutput> algorithmOutput) {
+    mapper->SetInputConnection(algorithmOutput);
+}
+void Shape::setMapper(vtkSmartPointer<vtkPolyDataMapper> tempMapper) {
+    actor->SetMapper(tempMapper);
+}
+
 
 Shape Shape::GetShape(QString shape) {
     Shape obj;

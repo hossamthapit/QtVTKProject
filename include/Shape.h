@@ -8,14 +8,24 @@
 #include <QFile>
 #include <QDataStream>
 #include <vtkPolyDataMapper.h>
+#include <vtkPolyDataAlgorithm.h>
+#include <vtkAlgorithmOutput.h>
+
 
 
 class Shape
 {
+
+protected:
+	void setMapper(vtkSmartPointer<vtkPolyDataMapper> mapper);
+	void setInputConnection(vtkSmartPointer<vtkAlgorithmOutput> mapper);
+
 public:
 	QStack < QColor > color , redosColor;
 	vtkSmartPointer<vtkActor> actor;
-	vtkSmartPointer<vtkPolyDataMapper> vtkShape;
+	vtkSmartPointer<vtkPolyDataMapper> mapper;
+	vtkSmartPointer<vtkPolyDataAlgorithm> shapeSource;
+
 
 	Shape();
 	static Shape GetShape(QString s);

@@ -2,13 +2,17 @@ C:/QTVTKProject/build/QtVTKProject_autogen/include_Debug/6YEA5652QU/moc_MainWind
   C:/Program\ Files/VTK/include/vtk-9.2/QVTKInteractor.h \
   C:/Program\ Files/VTK/include/vtk-9.2/QVTKWin32Header.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkABI.h \
+  C:/Program\ Files/VTK/include/vtk-9.2/vtkAbstractMapper.h \
+  C:/Program\ Files/VTK/include/vtk-9.2/vtkAbstractMapper3D.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkActor.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkActorCollection.h \
+  C:/Program\ Files/VTK/include/vtk-9.2/vtkAlgorithm.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkBuild.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkCollection.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkCommand.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkCommonCoreModule.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkCommonDataModelModule.h \
+  C:/Program\ Files/VTK/include/vtk-9.2/vtkCommonExecutionModelModule.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkCompiler.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkDataObject.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkDeprecation.h \
@@ -22,6 +26,7 @@ C:/QTVTKProject/build/QtVTKProject_autogen/include_Debug/6YEA5652QU/moc_MainWind
   C:/Program\ Files/VTK/include/vtk-9.2/vtkInteractorObserver.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkInteractorStyle.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkLegacy.h \
+  C:/Program\ Files/VTK/include/vtk-9.2/vtkMapper.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkMath.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkMathConfigure.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkMathPrivate.hxx \
@@ -35,6 +40,7 @@ C:/QTVTKProject/build/QtVTKProject_autogen/include_Debug/6YEA5652QU/moc_MainWind
   C:/Program\ Files/VTK/include/vtk-9.2/vtkOpenGLRenderWindow.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkOptions.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkPlatform.h \
+  C:/Program\ Files/VTK/include/vtk-9.2/vtkPolyDataMapper.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkProp.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkProp3D.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkPropCollection.h \
@@ -50,6 +56,7 @@ C:/QTVTKProject/build/QtVTKProject_autogen/include_Debug/6YEA5652QU/moc_MainWind
   C:/Program\ Files/VTK/include/vtk-9.2/vtkSetGet.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkSmartPointer.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkSmartPointerBase.h \
+  C:/Program\ Files/VTK/include/vtk-9.2/vtkStdString.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkSystemIncludes.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkTDxConfigure.h \
   C:/Program\ Files/VTK/include/vtk-9.2/vtkTimeStamp.h \
@@ -74,6 +81,8 @@ C:/QTVTKProject/build/QtVTKProject_autogen/include_Debug/6YEA5652QU/moc_MainWind
   C:/Program\ Files/VTK/include/vtk-9.2/vtksys/Status.hxx \
   C:/Program\ Files/VTK/include/vtk-9.2/vtksys/SystemTools.hxx \
   C:/QTVTKProject/include/Shape.h \
+  C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/QDataStream \
+  C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/QFile \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/QObject \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/QStack \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/q20memory.h \
@@ -106,6 +115,8 @@ C:/QTVTKProject/build/QtVTKProject_autogen/include_Debug/6YEA5652QU/moc_MainWind
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qdatastream.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qdebug.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qexceptionhandling.h \
+  C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qfile.h \
+  C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qfiledevice.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qflags.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qfloat16.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qforeach.h \
@@ -115,6 +126,7 @@ C:/QTVTKProject/build/QtVTKProject_autogen/include_Debug/6YEA5652QU/moc_MainWind
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qglobalstatic.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qhash.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qhashfunctions.h \
+  C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qiodevice.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qiodevicebase.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qiterable.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qiterator.h \
@@ -182,6 +194,7 @@ C:/QTVTKProject/build/QtVTKProject_autogen/include_Debug/6YEA5652QU/moc_MainWind
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qutf8stringview.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qvariant.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qvarlengtharray.h \
+  C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qvector.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qversiontagging.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtCore/qxptype_traits.h \
   C:/QtNEW/6.5.1/msvc2019_64/include/QtGui/qaction.h \
