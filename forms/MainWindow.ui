@@ -125,7 +125,7 @@
     <property name="geometry">
      <rect>
       <x>820</x>
-      <y>520</y>
+      <y>490</y>
       <width>101</width>
       <height>20</height>
      </rect>
@@ -162,16 +162,6 @@
      <rect>
       <x>820</x>
       <y>280</y>
-      <width>201</width>
-      <height>28</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_Rotare">
-    <property name="geometry">
-     <rect>
-      <x>820</x>
-      <y>340</y>
       <width>201</width>
       <height>28</height>
      </rect>
@@ -216,7 +206,7 @@
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>920</x>
+      <x>890</x>
       <y>400</y>
       <width>20</width>
       <height>20</height>
@@ -229,7 +219,7 @@
    <widget class="QLineEdit" name="lineEdit_Ytranslate">
     <property name="geometry">
      <rect>
-      <x>940</x>
+      <x>910</x>
       <y>400</y>
       <width>41</width>
       <height>28</height>
@@ -239,7 +229,7 @@
    <widget class="QLineEdit" name="lineEdit_Ztranslate">
     <property name="geometry">
      <rect>
-      <x>1030</x>
+      <x>980</x>
       <y>400</y>
       <width>41</width>
       <height>28</height>
@@ -249,7 +239,7 @@
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>1010</x>
+      <x>960</x>
       <y>400</y>
       <width>20</width>
       <height>20</height>
@@ -262,21 +252,21 @@
    <widget class="QPushButton" name="btnTranslate">
     <property name="geometry">
      <rect>
-      <x>820</x>
-      <y>440</y>
-      <width>251</width>
+      <x>1030</x>
+      <y>400</y>
+      <width>41</width>
       <height>29</height>
      </rect>
     </property>
     <property name="text">
-     <string>Translate</string>
+     <string>OK</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_Opacity">
     <property name="geometry">
      <rect>
       <x>820</x>
-      <y>540</y>
+      <y>510</y>
       <width>201</width>
       <height>28</height>
      </rect>
@@ -312,7 +302,7 @@
     <property name="geometry">
      <rect>
       <x>1030</x>
-      <y>540</y>
+      <y>510</y>
       <width>41</width>
       <height>29</height>
      </rect>
@@ -351,7 +341,7 @@
     <property name="geometry">
      <rect>
       <x>820</x>
-      <y>480</y>
+      <y>450</y>
       <width>251</width>
       <height>29</height>
      </rect>
@@ -364,7 +354,7 @@
     <property name="geometry">
      <rect>
       <x>820</x>
-      <y>650</y>
+      <y>640</y>
       <width>121</width>
       <height>29</height>
      </rect>
@@ -377,13 +367,108 @@
     <property name="geometry">
      <rect>
       <x>950</x>
-      <y>650</y>
+      <y>640</y>
       <width>121</width>
       <height>29</height>
      </rect>
     </property>
     <property name="text">
      <string>Load</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>380</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Translate</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Zrotate">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>340</y>
+      <width>41</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Yrotate">
+    <property name="geometry">
+     <rect>
+      <x>910</x>
+      <y>340</y>
+      <width>41</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>960</x>
+      <y>340</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Z</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>340</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Xrotate">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>340</y>
+      <width>41</width>
+      <height>28</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>340</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Y</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelSavedLoadedMessage">
+    <property name="geometry">
+     <rect>
+      <x>820</x>
+      <y>670</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
     </property>
    </widget>
   </widget>

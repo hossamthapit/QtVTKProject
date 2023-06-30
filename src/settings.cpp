@@ -25,9 +25,8 @@ Shape Settings::LoadShapeMapper(const char* path) {
     vtkSmartPointer<vtkPolyDataMapper> tempMapper = vtkSmartPointer<vtkPolyDataMapper>::New();
     tempMapper->SetInputConnection(tempReader->GetOutputPort());
 
-    Shape shape = Sphere();
+    Shape shape = Shape();
     shape.actor->SetMapper(tempMapper);
-
     return shape;
 }
 

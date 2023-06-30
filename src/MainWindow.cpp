@@ -25,6 +25,7 @@
 #include <vtkPolyDataAlgorithm.h>
 #include <vtkSphereSource.h>
 #include <settings.h>
+#include <QMessageBox.h>
 
 
 
@@ -108,10 +109,12 @@ void MainWindow::onFlipClick() {
 
 void MainWindow::onRotateClick() {
     if (!activeShape.size())return;
-    double rotation = ui->lineEdit_Rotare->text().toDouble();
-    activeShape.back().actor->RotateX(rotation);
-    activeShape.back().actor->RotateY(rotation);
-    activeShape.back().actor->RotateZ(rotation);
+    double xRotation = ui->lineEdit_Xrotate->text().toDouble();
+    double yRotation = ui->lineEdit_Yrotate->text().toDouble();
+    double zRotation = ui->lineEdit_Zrotate->text().toDouble();
+    activeShape.back().actor->RotateX(xRotation);
+    activeShape.back().actor->RotateY(yRotation);
+    activeShape.back().actor->RotateZ(zRotation);
     renderScreen();
 };
 
@@ -200,27 +203,11 @@ void MainWindow::onRedoColorClick() {
     }
 }
 
-//QString inputfile = QFileDialog::getOpenFileName(this, tr("Open File"), "/Users", "All files (*.*)");
-//if (inputfile != "") {
-//    QFile file(inputfile);
-//    if (!file.open(QFile::ReadOnly)) {
-//    }
-//    QTextStream in(&file);
-//    do {
-//        QString line = in.readLine();
-//        QStringList fields = line.split(",");
-//        for (int i = 0; i < fields.size(); i++) {
-//            SingleLineData[i] = fields[i].toDouble();
-//        }
-//    file.close();
-//}
-//
-
-
 void MainWindow::onSaveFile() {
     const char* mapperPath = "savedData/shapeSource.stl";
     const char* dataPath = "savedData/shapeData.bin";
     Settings::SaveShape(activeShape.back(), mapperPath, dataPath);
+    ui->labelSavedLoadedMessage->setText("Saved Successfully");
 }
 
 void MainWindow::onLoadFile() {
@@ -232,4 +219,5 @@ void MainWindow::onLoadFile() {
     colorShape(shape);
     addShapeToRenderer(shape);
     renderScreen();
+    ui->labelSavedLoadedMessage->setText("Loaded Successfully");
 }
