@@ -17,13 +17,12 @@ A desktop app that draws 3D shapes and manipulates them
 
 ## Testing Snaps
 
-### valid function formats Screenshot
+### Image for 1 shape
 ![Testing Image]( )
 ![Image text]( )
-### invalid function formats Screenshot
+### Image for 2 shapes with change in rotation, translation, and opacity 
 ![Image text]( )
 ![Image text]( )
-
 
 ## Tools and Technologies
 ***
