@@ -18,11 +18,11 @@ A desktop app that draws 3D shapes and manipulates them
 ## Testing Snaps
 
 ### Image for 1 shape
-![Testing Image]( )
-![Image text]( )
+![Testing Image](data/oneShape.png)
 ### Image for 2 shapes with change in rotation, translation, and opacity 
-![Image text]( )
-![Image text]( )
+![Image text](data/twoShape.png)
+### Image for 3 shapes 
+![Image text](data/threeShape.png)
 
 ## Tools and Technologies
 A list of tools & technologies used within the project:
