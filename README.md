@@ -1,4 +1,4 @@
-# QtVTKProject
+# 3D Shape Creator and Painter 
 A desktop app that draws 3D shapes and manipulates them
 
 ## Table of Contents
