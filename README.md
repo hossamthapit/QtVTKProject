@@ -28,14 +28,11 @@ A desktop app that draws 3D shapes and manipulates them
 ## Tools and Technologies
 ***
 A list of tools & technologies used within the project:
-* ![Visual Studio 2022](https://visualstudio.microsoft.com)
-
-* [Visual Studio 2022] https://visualstudio.microsoft.com/
-* [QT 6.4] https://www.qt.io/download-open-source
-* [VTK 9.2] https://vtk.org/download/
-* [CMake 3.2] https://cmake.org/install/
-* [QT Creator] https://www.qt.io/product/development-tools
-
+* <a href='https://visualstudio.microsoft.com'>Visual Studio 2022</a>
+* <a href='https://www.qt.io/download-open-source'>QT 6.4</a>
+* <a href='https://vtk.org/download'>VTK 9.2</a>
+* <a href='https://cmake.org/install'>CMake 3.2</a>
+* <a href='https://www.qt.io/product/development-tools'>QT Creator</a>
 
 ## How to use
 ***
