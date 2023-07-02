@@ -12,7 +12,7 @@ A desktop app that draws 3D shapes and manipulates them
 4. [How to use](#How-to-use)
 
 ## General Info
-***
+
 1. You can use this app to create multiple 3D shapes and merge them
 
 ## Testing Snaps
