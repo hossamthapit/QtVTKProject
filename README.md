@@ -12,21 +12,19 @@ A desktop app that draws 3D shapes and manipulates them
 4. [How to use](#How-to-use)
 
 ## General Info
-***
+
 1. You can use this app to create multiple 3D shapes and merge them
 
 ## Testing Snaps
 
-### valid function formats Screenshot
+### Image for 1 shape
 ![Testing Image]( )
 ![Image text]( )
-### invalid function formats Screenshot
+### Image for 2 shapes with change in rotation, translation, and opacity 
 ![Image text]( )
 ![Image text]( )
-
 
 ## Tools and Technologies
-***
 A list of tools & technologies used within the project:
 * <a href='https://visualstudio.microsoft.com'>Visual Studio 2022</a>
 * <a href='https://www.qt.io/download-open-source'>QT 6.4</a>
@@ -35,7 +33,6 @@ A list of tools & technologies used within the project:
 * <a href='https://www.qt.io/product/development-tools'>QT Creator</a>
 
 ## How to use
-***
 1. Setup the Cmake & QT
 2. Download VTk and build it using the CMake
 3. Download the project and have fun!
